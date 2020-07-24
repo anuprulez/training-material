@@ -19,7 +19,6 @@ key_points:
 time_estimation: 2H
 contributors:
 - khanteymoori
-- anuprulez
 - simonbray
 ---
 
