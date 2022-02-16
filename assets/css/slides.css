@@ -1,10 +1,45 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
 body {
   font-family: 'Droid Serif';
 }
+
+body.theme-night div.remark-slide-content {
+	background-color: #000 !important;
+	color: orange !important;
+}
+
+body.theme-night .footnote {
+	color: #999;
+}
+
+body.theme-night a {
+	color: white;
+}
+
+
+body.theme-midnight div.remark-slide-content, body.theme-halloween div.remark-slide-content {
+	background-color: #000 !important;
+	color: orange !important;
+}
+
+body.theme-midnight .footnote, body.theme-halloween .footnote {
+	color: #222;
+}
+
+body.theme-midnight a, body.theme-halloween a {
+	color: white;
+}
+
+body div.remark-slide-number {
+	color: white;
+}
+
+body.theme-rainbow div.my-header {
+	background: linear-gradient(to bottom,#e2453c 0,#e2453c 16%,#e07e39 16%,#e07e39 32%,#e5d667 32%,#e5d667 48%,#51b95b 48%,#51b95b 66%,#1e72b7 66%,#1e72b7 86%,#6f5ba7 86%) no-repeat !important;
+}
+body.theme-rainbow .my-header i {color: black;}
 
 h1,
 h2,
@@ -37,9 +72,10 @@ h3 {
   color: #ddd;
 }
 
+
 .remark-code,
 .remark-inline-code {
-  font-family: 'Ubuntu Mono', 'Courier';
+  font-family: 'Courier', monospace;
   text-align: left;
 }
 
@@ -58,10 +94,14 @@ ol {
 
 img {
   max-height: 400px;
-  max-width: 700px;
+  max-width: min(700px, 100%);
   border: 0 !important;
   box-shadow: none !important;
   background: none !important;
+}
+
+img.cover-logo {
+  max-height: 10em;
 }
 
 .image-05 img {
@@ -80,8 +120,16 @@ img {
   width: 25%;
 }
 
+.image-40 img {
+  width: 40%;
+}
+
 .image-50 img {
   width: 50%;
+}
+
+.image-60 img {
+  width: 60%;
 }
 
 .image-75 img {
@@ -93,6 +141,10 @@ img {
 }
 
 .image-100 img {
+  width: 100%;
+}
+
+.table-100 table {
   width: 100%;
 }
 
@@ -165,6 +217,26 @@ img {
   font-size: 12px;
 }
 
+.top{
+  vertical-align: top !important;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.blue{
+  color: blue;
+}
+
 a {
   text-decoration: none;
 }
@@ -197,6 +269,16 @@ th {
   float: right;
 }
 
+.left-column40 {
+  width: 40%;
+  float: left;
+}
+
+.right-column40 {
+  width: 40%;
+  float: right;
+}
+
 .left-column50 {
   width: 50%;
   float: left;
@@ -204,6 +286,36 @@ th {
 
 .right-column50 {
   width: 50%;
+  float: right;
+}
+
+.left-column60 {
+  width: 60%;
+  float: left;
+}
+
+.right-column60 {
+  width: 60%;
+  float: right;
+}
+
+.left-column70 {
+  width: 70%;
+  float: left;
+}
+
+.right-column30 {
+  width: 30%;
+  float: right;
+}
+
+.left-column30 {
+  width: 30%;
+  float: left;
+}
+
+.right-column70 {
+  width: 70%;
   float: right;
 }
 
@@ -247,8 +359,23 @@ th {
   font-size: 30px;
 }
 
+.enlarge200 {
+  font-size: 200%;
+}
+
+.enlarge200 .remark-code {
+  font-size: 36px;
+}
+
 .strike {
   text-decoration: line-through;
+}
+
+.pull-left-large {
+    /* this does not break compatibility with .pull-right */
+    float: left;
+    margin-left: -3em;
+    width: 60%;
 }
 
 .pull-left {
@@ -259,6 +386,11 @@ th {
 .pull-right {
   float: right;
   width: 47%;
+}
+
+.force-right {
+  position: absolute;
+  left: 47%;
 }
 
 .pull-right ~ p {
@@ -288,6 +420,10 @@ th {
   margin-left: 15px;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 /* for icons */
 .visually-hidden {
     border: 0;
@@ -298,4 +434,88 @@ th {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.contributors-line {
+    color: $gray;
+    font-size: 1.1em;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.contributor-badge {
+    /* prevent breaking across lines */
+    white-space: nowrap;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1em;
+    border: 1px solid #b7daff;
+    padding-right: 0.5em;
+    margin: 0.2em;
+}
+
+.contributor-badge img {
+	height: 1.5em;
+	border-radius: 50%;
+	margin: 0 0.25em 0 0;
+}
+
+.contributor-newcontributors i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .5rem .75rem;
+	font-size: 1rem;
+	line-height: 1.25;
+	border-radius: .25rem;
+	transition: all .15s ease-in-out;
+}
+
+.remark-code .btn-light {
+	color: #111;
+	background-color: #f8f9fa;
+	border-color: #f8f9fa;
+}
+
+.remark-code {
+	position: relative;
+}
+
+.remark-code .btn{
+	-webkit-transition:opacity .3s ease-in-out;
+	-o-transition:opacity .3s ease-in-out;
+	transition:opacity .3s ease-in-out;
+	opacity:0;
+	padding:2px 6px;
+	position:absolute;
+	right:4px;
+	top:4px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.remark-code:hover .btn,.remark-code .btn:focus{
+	opacity:1
+}
+
+/* via https://github.com/gnab/remark/issues/481#issuecomment-340313168 */
+.remark-slide-container:nth-last-child(1) .my-footer ,
+.remark-slide-container:nth-child(1) .my-footer {
+	display: none;
 }

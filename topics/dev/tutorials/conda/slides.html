@@ -9,21 +9,17 @@
 
 
 
+
+
   <head>
     <meta charset="utf-8">
     <title>Tool Dependencies and Conda</title>
     
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-45719423-18' , 'auto');
-        ga('send', 'pageview');
-    </script>
+        <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
     
     <link rel="stylesheet" href="/training-material/assets/css/slides.css">
-    <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css" id="theme">
+    <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
 
@@ -74,16 +70,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Tool Dependencies and Conda",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -102,32 +95,30 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Development in Galaxy",
+    "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
+    "url": "https://training.galaxyproject.org//training-material/topics/dev/"
+  },
   "courseCode": "dev / conda / slides",
   "learningResourceType": "slides",
   "name": "Slides for 'Tool Dependencies and Conda' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Tool Dependencies and Conda",
-    "description": "Tool Dependencies and Conda",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/dev/tutorials/conda/slides.html",
+  "url": "https://training.galaxyproject.org//training-material/topics/dev/tutorials/conda/slides.html",
   "timeRequired": "PT75M",
-  "description": "Tool Dependencies and Conda\\nThe questions this  addresses are:\n - How can I connect tools to applications and libraries?\n - What are the advantages of declaring dependencies for my tool?\n - What are Conda and Bioconda?\n - What are Conda recipes and environments?\n - How do I find and use existing Conda recipes?\n - How do I develop Conda recipes for use within Galaxy tools?\n\n\\nThe objectives are:\n - Learn to use existing Conda recipes to enable best practice tool dependency management in Galaxy.\n - Learn the basics of building Conda recipes and contributing to Bioconda.\n - Learn to use Planemo to assist in developing Galaxy tools from existing and new Conda recipes.\n\n",
+  "description": "The questions this  addresses are:\n - How can I connect tools to applications and libraries?\n - What are the advantages of declaring dependencies for my tool?\n - What are Conda and Bioconda?\n - What are Conda recipes and environments?\n - How do I find and use existing Conda recipes?\n - How do I develop Conda recipes for use within Galaxy tools?\n\n\\nThe objectives are:\n - Learn to use existing Conda recipes to enable best practice tool dependency management in Galaxy.\n - Learn the basics of building Conda recipes and contributing to Bioconda.\n - Learn to use Planemo to assist in developing Galaxy tools from existing and new Conda recipes.\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/dev/tutorials/tool-integration/tutorial.html",
-      "name": "Hands-on for 'tool-integration' tutorial",
-      "description": "tool-integration",
-      "learningResourceType": "hands-on tutorial",
+      "url": "https://training.galaxyproject.org//training-material/topics/dev/tutorials/tool-integration/slides.html",
+      "name": "Tool development and integration into Galaxy",
+      "description": "Slides for 'Tool development and integration into Galaxy' tutorial",
+      "learningResourceType": "slides",
       "interactivityType": "expositive",
       "provider": {
         "@type": "Organization",
@@ -138,10 +129,16 @@
     },
     {
       "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/dev/tutorials/conda_sys/tutorial.html",
-      "name": "Hands-on for 'conda_sys' tutorial",
-      "description": "conda_sys",
+      "url": "http://planemo.readthedocs.io/en/latest/writing_standalone.html",
       "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive"
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/dev/tutorials/conda_sys/slides.html",
+      "name": "Prerequisites for building software/conda packages",
+      "description": "Slides for 'Prerequisites for building software/conda packages' tutorial",
+      "learningResourceType": "slides",
       "interactivityType": "expositive",
       "provider": {
         "@type": "Organization",
@@ -152,9 +149,6 @@
     }
   ],
   "hasPart": [
-
-  ],
-  "mentions": [
 
   ],
   "author": [
@@ -198,11 +192,12 @@
       "@type": "CreativeWork",
       "name": "Development in Galaxy",
       "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
-      "url": "https://galaxyproject.github.io//training-material/topics/dev/"
+      "url": "https://training.galaxyproject.org//training-material/topics/dev/"
     }
   ]
 }
     </script>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -212,6 +207,9 @@ class: center, middle, inverse
 
 <div class="my-header"><span>
 <a href="/training-material/topics/dev" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
+
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/dev/tutorials/conda/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
 </span></div>
 
 <div class="my-footer"><span>
@@ -222,7 +220,49 @@ class: center, middle, inverse
 
 ---
 
+
+
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" class="cover-logo"/>
+
+
 # Tool Dependencies and Conda
+
+
+<div class="contributors-line">
+
+<a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a>
+
+
+<a href="/training-material/hall-of-fame/jmchilton/" class="contributor-badge contributor-jmchilton"><img src="https://avatars.githubusercontent.com/jmchilton?s=27" alt="Avatar">John Chilton</a>
+
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+
+<a href="/training-material/hall-of-fame/hmenager/" class="contributor-badge contributor-hmenager"><img src="https://avatars.githubusercontent.com/hmenager?s=27" alt="Avatar">Hervé Ménager</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+
+</div>
+
+
+<div class="footnote" style="bottom: 4 em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: Jul 26, 2021</div>
+
+<div class="footnote" style="bottom: 2.5em;"><i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a></div>
+<div class="footnote" style="bottom: 1em;"><strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes</div>
+
+???
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
+
+Press `P` again to switch presenter notes off
+
+Press `C` to create a new window where the same presentation will be displayed.
+This window is linked to the main window. Changing slides on one will cause the
+slide to change on the other.
+
+Useful when presenting.
 
 
 
@@ -242,8 +282,8 @@ Before diving into this slide deck, we recommend you to have a look at:
             
         
 - [Development in Galaxy](/training-material/topics/dev)
-    - Tool development and integration into Galaxy: [<i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides](/training-material/topics/dev/tutorials/tool-integration/slides.html) - [<i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on](/training-material/topics/dev/tutorials/tool-integration/tutorial.html)
-    - Prerequisites for building software/conda packages: [<i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides](/training-material/topics/dev/tutorials/conda_sys/slides.html)
+    - Tool development and integration into Galaxy: [<i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides](/training-material/topics/dev/tutorials/tool-integration/slides.html) - [<i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on](http://planemo.readthedocs.io/en/latest/writing_standalone.html)
+    - Prerequisites for building software/conda packages: [<i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides](/training-material/topics/dev/tutorials/conda_sys/slides.html)
     
 
 
@@ -255,7 +295,9 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 
 
-### &lt;i class=&quot;fa fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
+
+
+### &lt;i class=&quot;far fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
 
 
 - How can I connect tools to applications and libraries?
@@ -274,7 +316,8 @@ Before diving into this slide deck, we recommend you to have a look at:
 ---
 
 
-### &lt;i class=&quot;fa fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
 
 
 - Learn to use existing Conda recipes to enable best practice tool dependency management in Galaxy.
@@ -336,7 +379,7 @@ The `--requirement seqtk@1.2` gets translated into the following Galaxy tool XML
 
 ## Dependency Resolution
 
-![](../../images/galaxy_instance.png)
+![schematic of a galaxy server with dependency resolution via requirement tags at the top. On the left is the tool box with a number of xml files listed like seqtk_seq and seqtk_subseq. On the right is applications &amp; libraries showing only a few tools like seqtk, all of the 3 multipoe subtools were collapsed](../../images/galaxy_instance.png)
 
 ???
 
@@ -350,7 +393,7 @@ The `--requirement seqtk@1.2` gets translated into the following Galaxy tool XML
 
 class: enlarge120
 
-![](../../../../shared/images/conda_logo.png)
+![Conda logo](../../../../shared/images/conda_logo.png)
 
 Package, dependency and environment management
 
@@ -358,7 +401,7 @@ Package, dependency and environment management
 
 class: enlarge120
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Conda Terminology
+###.image-25[![Conda logo](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Conda Terminology
 
 Conda **recipes** build **packages** that are published to **channels**.
 
@@ -366,7 +409,7 @@ Conda **recipes** build **packages** that are published to **channels**.
 
 class: enlarge120
 
-### .image-25[![](../../../../shared/images/conda_logo.png)] &lt;br /&gt; Conda Key Features for Galaxy
+### .image-25[![Conda logo](../../../../shared/images/conda_logo.png)] &lt;br /&gt; Conda Key Features for Galaxy
 
 - No compilation at install time - *binaries* with their dependencies, libraries...
 
@@ -393,31 +436,27 @@ Compared with the Tool Shed dependency management (`tool_dependencies.xml`), Bio
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Conda Distributions
+###.image-25[![Conda logo](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Conda Distributions
 
 ```
 
 
 ```
-![](../../images/miniconda_vs_anaconda.png)
+![Schematic showing conda as a small circle, miniconda encompasses it and adds python and base packages. Anaconda encompasses all of it, adding 150 high quality packages.](../../images/miniconda_vs_anaconda.png)
 
 ---
 
 class: enlarge120
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Best Practice Channels
+###.image-25[![conda logo](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Best Practice Channels
 
 - Packages through channels within Continuum.
 
 - Conda channels searched by Galaxy for packages
-    - iuc
+    - iuc (legacy)
     - conda-forge
     - bioconda
     - defaults
-
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;br/&gt;
 
 .footnote[If you are interested in Natural Language Processing or Cheminformatics you may be asking if these channels can still work for your tools. Despite the name [Bioconda](https://bioconda.github.io/) - it is really more about community and a set of best practices than about bioinformatics purity - many diverse packages have been integrated.]
 
@@ -425,7 +464,7 @@ class: enlarge120
 
 class: left, enlarge120
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Install and Configure
+###.image-25[![conda logo](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Install and Configure
 
 ```bash
 $ planemo conda_init
@@ -442,24 +481,24 @@ This has already been done on [Planemo machine](https://github.com/galaxyproject
 
 class: enlarge120
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Quickstart
+###.image-25[![conda logo](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Quickstart
 #### Using Conda outside Planemo
-
-- Install a package
-
-```bash
-$ conda install pyyaml
-```
 
 - Install some packages within an isolated environment
 
 ```bash
 $ conda create -n yaml pyyaml
 $ conda env list
-yaml        *  ~/miniconda3/envs/yaml
-root             ~/miniconda3
-$ source activate yaml
+base        *  ~/miniconda3
+yaml           ~/miniconda3/envs/yaml
+$ conda activate yaml
 (yaml) $
+```
+
+- Install a package in the current environment
+
+```bash
+$ conda install pyyaml
 ```
 
 ---
@@ -474,13 +513,13 @@ Galaxy now automatically installs Conda when first launched and will use [Biocon
 
 ### Installing Tools with Conda
 
-![](../../images/tool_install.png)
+![Screnshot of tool installation menu](../../images/tool_install.png)
 
 ---
 
 ### Managing Tool Dependencies
 
-![](../../images/dependency_manage.png)
+![Screenshot of the galaxy page for managing tool dependencies](../../images/dependency_manage.png)
 
 ---
 
@@ -631,22 +670,23 @@ The following line indicates the seqtk package was found:
 [galaxy.tools.deps] Using dependency seqtk version 1.2 of type conda
 ```
 ]
----
-
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
-
-![](../../images/exercise.png)
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+
+![Cartoon of people jumping.](../../images/exercise.png)
+
+---
+
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### The Goal
 - Use the Planemo commands `conda_install`, `conda_env`, and `test` to practice the Galaxy tool dependency development lifecycle.
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### Steps
 
@@ -707,16 +747,13 @@ $ $HOME/miniconda3/bin/conda search -c iuc -c conda-forge -c bioconda seqtk
 
 ### Using Anaconda Search - https://anaconda.org
 
-![](../../images/anaconda_landing.png)
-
-
-???
+![screensho of the anaconda homepage](../../images/anaconda_landing.png)
 
 ---
 
 ### Using Anaconda Search - https://anaconda.org
 
-![](../../images/anaconda_result.png)
+![Screenshot of an anaconda search for the term seqtk](../../images/anaconda_result.png)
 
 ???
 
@@ -725,13 +762,13 @@ only one that will be used by Galaxy by default.
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
-![](../../images/exercise.png)
+![Cartoon of people jumping.](../../images/exercise.png)
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### The Goal
 - Find the correct package and version for a tool in a best practice channel.
@@ -739,7 +776,7 @@ only one that will be used by Galaxy by default.
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### Steps
 
@@ -760,86 +797,88 @@ pear.xml              test-data
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe
+## Writing a Conda recipe
 
-If searching best practice channels fails, you may need to build a Conda recipe.
+- If searching best practice channels fails, you may need to build a Conda recipe.
 
-.footnote[[Documentation about how to write conda recipes from scratch](https://conda.pydata.org/docs/build_tutorials/pkgs2.html) &lt;br/&gt; [Bioconda guidelines](https://bioconda.github.io/guidelines.html)]
+- A Conda recipe is defined by a directory, the two most important files in this directory are:
+  - `meta.yaml`: contains all the metadata of the recipe
+  - `build.sh`: the (optional) Unix script that installs the files
 
----
-
-class: left
-
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - The Files
-
-A Conda recipe is defined by a directory, the two most important files in this directory are:
-
-- `meta.yaml`: contains all the metadata of the recipe
-- `build.sh`: the Unix script that installs the files
+.footnote[[conda-build user guide](https://conda.io/projects/conda-build/en/latest/user-guide/index.html) &lt;br/&gt; [Bioconda guidelines](https://bioconda.github.io/contributor/index.html)]
 
 ---
 
 class: left
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - `meta.yaml`
+## `meta.yaml`
 
 `meta.yaml` contains basic metadata about the recipe.
 
+
 ```yaml
+{% set version = &quot;0.7.17&quot; %}
+{% set sha256 = &quot;980b9591b61c60042c4a39b9e31ccaad8d17ff179d44d347997825da3fdf47fd&quot; %}
+
 package:
   name: bwa
-  version: &quot;0.7.15&quot;
-about:
-  home: http://bio-bwa.sourceforge.net
-  license: MIT
-  summary: The BWA read mapper.
-build:
-  number: 0
-  skip: True # [osx]
+  version: {{ version }}
 source:
-  fn: v0.7.15.tar.gz
-  url: https://github.com/lh3/bwa/archive/v0.7.15.tar.gz
-  md5: 54fdee953c5c256d36885a1c5c6b118c
+  url: https://github.com/lh3/bwa/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+  patches:
+    - Makefile.patch
+build:
+  number: 7
+about:
+  home: https://github.com/lh3/bwa
+  license: GPL3
+  license_file: COPYING
+  summary: The BWA read mapper.
 ```
+
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - `requirements`
+## `meta.yaml` &gt; `requirements`
+
 
 ```yaml
 requirements:
   build:
-    - gcc   # [not osx]
-    - llvm  # [osx]
+    - {{ compiler('c') }}
+  host:
     - zlib
   run:
-    - libgcc   # [not osx]
     - zlib
-    - bowtie2
+    - perl
+
 ```
 &lt;small&gt;
-- `build`: requirements needed during the build step (here compilation)
+- `build`: requirements needed to perform the compilation (if any)
+- `host`: requirements needed during the build step (here compilation)
 - `run`: requirements needed at runtime
 &lt;/small&gt;
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - Preprocessing Selectors
+## Preprocessing Selectors
 
+- Common selectors include `linux`, `osx`, `py2k`, `py3k`.
 - Evaluated as Python expressions - feel free to use `and`, `or`, etc.
-- Other common selectors include `py2k`, `py3k`.
+
 
 ```yaml
 requirements:
   build:
-    - gcc   # [not osx]
-    - llvm  # [osx]
-    - zlib
+    - bz2file  # [py &lt; 33]
+    - typing  # [py27 or py34]
+
 ```
 
 ```yaml
 build:
-  skip: True  # [not py27]
+  skip: True  # [osx]
 ```
 
 .footer[.center[https://conda.io/projects/conda-build/en/latest/source/define-metadata.html#preprocessing-selectors ]]
@@ -848,13 +887,9 @@ build:
 
 class: left
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - Tests
-
-&lt;br/&gt;
-&lt;br/&gt;
+## Tests
 
 `meta.yaml` should contain simple tests. These are commands executed at the end of `conda build` and expected to return `0` on success.
-
 
 ```yaml
 test:
@@ -880,13 +915,13 @@ Please note that the Conda tests run inside the runtime environment and not in t
 
 ---
 
-From the [Bioconda Guidelines](https://bioconda.github.io/guidelines.html):
+From the [Bioconda Guidelines](https://bioconda.github.io/contributor/guidelines.html):
 
 &gt; An adequate test must be included in the recipe. An &quot;adequate&quot; test depends on the recipe, but must be able to detect a successful installation. While many packages may ship their own test suite (unit tests or otherwise), including these in the recipe is not recommended since it may timeout the build system on CircleCI. We especially want to avoid including any kind of test data in the repository.
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - `build.sh`
+## `build.sh`
 
 ```bash
 #!/bin/bash
@@ -910,7 +945,7 @@ cp *.py $PREFIX/bin
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - Skeletons
+## Skeletons
 
 ```bash
 $ conda skeleton pypi &lt;packagename&gt;
@@ -927,11 +962,11 @@ $ conda skeleton cpan &lt;packagename&gt;`
 
 These generate pre-filled recipes &lt;small&gt;(not guaranteed to work out of the box)&lt;/small&gt; for specific programming environments.
 
-.footnote[[Building conda packages with conda skeleton](https://conda.pydata.org/docs/build_tutorials/pkgs.html)]
+.footnote[[Building conda packages with conda skeleton](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html)]
 
 ---
 
-###.image-25[![](../../../../shared/images/conda_logo.png)] &lt;br/&gt; Writing a Conda Recipe - Building
+## Building
 
 Once the recipe is ready to go, the `conda build` command can be used to build it.
 
@@ -951,7 +986,7 @@ $ $HOME/miniconda3/bin/conda build .
 
 ---
 
-.image-75[![](../../../../shared/images/bioconda_logo.png)]
+.image-75[![bioconda logo](../../../../shared/images/bioconda_logo.png)]
 
 
 - A channel dedicated to bioinformatics (and other informatics) packages
@@ -962,7 +997,7 @@ $ $HOME/miniconda3/bin/conda build .
 
 ---
 
-###.image-25[![](../../../../shared/images/bioconda_logo.png)] contributing 1/2
+###.image-25[![bioconda logo](../../../../shared/images/bioconda_logo.png)] contributing 1/2
 
 - Fork [Bioconda](https://github.com/bioconda/bioconda-recipes/fork).
 - Clone your fork:
@@ -983,7 +1018,7 @@ $ $HOME/miniconda3/bin/conda build .
 
 ---
 
-###.image-25[![](../../../../shared/images/bioconda_logo.png)] contributing 2/2
+###.image-25[![bioconda logo](../../../../shared/images/bioconda_logo.png)] contributing 2/2
 
 - Commit and push to GitHub
 
@@ -1006,7 +1041,7 @@ $ $HOME/miniconda3/bin/conda build .
 - Enjoy your new Conda package at https://anaconda.org/bioconda
 
 
-See [Contributing with GitHub](../github-contribution/slides.html)
+See [Contributing with GitHub](/training-material/topics/contributing/tutorials/github-command-line-contribution/slides.html).
 
 ---
 
@@ -1021,13 +1056,13 @@ cache.
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
-![](../../images/exercise.png)
+![Cartoon of people jumping.](../../images/exercise.png)
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### The Goal
 - Implement and test a local Conda recipe.
@@ -1037,7 +1072,7 @@ cache.
 
 class: left
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### Before
 
@@ -1055,7 +1090,7 @@ This directory contains the outline of a tool for [fleeqtk](https://github.com/j
 
 class: left
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+### &lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
 
 #### Steps
 
@@ -1076,9 +1111,8 @@ class: left
 
 ## Jinja Templating
 
+
 ```yaml
-
-
 {% set name = &quot;seqtk&quot; %}
 {% set version = &quot;1.15.1&quot; %}
 
@@ -1087,61 +1121,11 @@ package:
   version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.zip
     url: http://coolsoftware.com/{{ name }}/{{ version }}/{{ name }}-{{ version }}.zip
-
-
 ```
+
 
 https://conda.io/projects/conda-build/en/latest/source/define-metadata.html#templating-with-jinja
-
----
-
-## Bioconda Variables
-
-```yaml
-CONDA_PY:
-  - 27
-  - 35
-  - 36
-CONDA_HTSLIB: &quot;1.7&quot;
-CONDA_BOOST: &quot;1.64&quot;
-CONDA_R: &quot;3.4.1&quot;
-CONDA_PERL: &quot;5.22.0&quot;
-CONDA_NPY: &quot;112&quot;
-CONDA_NCURSES: &quot;5.9&quot;
-CONDA_GSL: &quot;1.16&quot;
-CONDA_GMP: &quot;5.1&quot;
-CONDA_HDF5: &quot;1.8.17&quot;
-MACOSX_DEPLOYMENT_TARGET: &quot;10.9&quot;
-CONDA_ZLIB: &quot;1.2.11&quot;
-CONDA_BZIP2: &quot;1.0&quot;
-CONDA_XZ: &quot;5.2&quot;
-CONDA_BAMTOOLS: &quot;2.4.1&quot;
-```
-
-.footnote[.center[https://github.com/bioconda/bioconda-recipes/blob/master/scripts/env_matrix.yml ]]
-
----
-
-class: left
-
-## Pinning Libraries - Use jinja
-
-&gt; If your package links dynamically against a particular library, it is **often necessary to pin the version against which it was compiled, in order to avoid ABI incompatibilities**. Instead of hardcoding a particular version in the recipe, we use jinja templates to achieve this. This **helps ensure that all bioconda packages are binary-compatible with each other**. For example, bioconda provides an environment variable `CONDA_ZLIB` that contains the current major version of Zlib.
-
-
-```yaml
-
-requirements:
-  build:
-    - zlib {{ CONDA_ZLIB }}*
-  run:
-    - zlib {{ CONDA_ZLIB }}*
-
-```
-
-.footnote[.center[https://bioconda.github.io/guidelines.html#c-c ]]
 
 ---
 
@@ -1151,7 +1135,6 @@ class: left
 
 ```yaml
 source:
-  fn: v0.7.15.tar.gz
   url: https://github.com/lh3/bwa/archive/v0.7.15.tar.gz
   md5: 54fdee953c5c256d36885a1c5c6b118c
 ```
@@ -1200,48 +1183,47 @@ $PYTHON setup.py install
 
 ## Python - pysam's `meta.yaml`
 
-.reduce50[```yaml
+.reduce50[
+```yaml
+{% set version = &quot;0.15.2&quot; %}
+{% set samtools_version = &quot;1.9&quot; %}
+{% set bcftools_version = &quot;1.9&quot; %}
+
 package:
-    name: pysam
-    version: 0.11.2.2
+  name: pysam
+  version: '{{ version }}'
 
 source:
-    fn: pysam-0.11.2.2.tar.gz
-    url: https://pypi.python.org/packages/a4/1b/b6dfd92aea876647d20d9a8bd8618e4f2af6300539426be83c8bb0912d6f/pysam-0.11.2.2.tar.gz
-    md5: 56230cd5f55b503845915b76c22d620a
-    patches:  # [osx]
-      - osx_rpath.patch [osx]
+  url: https://github.com/pysam-developers/pysam/archive/v{{ version }}.tar.gz
+  sha256: 8cb3dd70f0d825086ac059ec2445ebd2ec5f14af73e7f1f4bd358966aaee5ed3
 
 build:
-    number: 0
-    skip: False
+  number: 3
+  binary_relocation: False # [linux]
 
 requirements:
-    build:
-        - gcc  # [linux]
-        - llvm # [osx]
-        - htslib &gt;=1.4.1,&lt;1.5
-        - samtools &gt;=1.4.1,&lt;1.5
-        - bcftools &gt;=1.4.1,&lt;1.5
-        - cython
-        - python
-        - setuptools
-        - zlib
-        - curl
-
-    run:
-        - libgcc # [linux]
-        - htslib &gt;=1.4.1,&lt;1.5
-        - samtools &gt;=1.4.1,&lt;1.5
-        - bcftools &gt;=1.4.1,&lt;1.5
-        - python
-        - zlib
-        - curl
+  build:
+    - {{ compiler('c') }}
+  host:
+    - htslib
+    - samtools {{ samtools_version }}
+    - bcftools {{ bcftools_version }}
+    - cython
+    - python
+    - setuptools
+    - zlib
+    - curl
+    - libdeflate
+  run:
+    - samtools {{ samtools_version }}
+    - bcftools {{ bcftools_version }}
+    - python
+    - curl
+    - libdeflate
 
 test:
-
-    imports:
-        - pysam
+  imports:
+    - pysam
 ```]
 
 ---
@@ -1256,65 +1238,11 @@ conda skeleton cran &lt;packagename&gt;
 
 - Builds likely correct `build.sh` and `meta.yaml`.
 - The recipe name will have an `r-` prefix and will be converted to lowercase.
-- Typically can be used without modification, though dependencies may also need recipes.
 
-https://bioconda.github.io/guidelines.html#r-cran
+&lt;i class=&quot;fas fa-exclamation-triangle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;warning&lt;/span&gt; _The majority of R packages on CRAN are generic and should therefore be submitted at Conda-Forge.
+Exceptions are r-\* packages that depends on bioconductor-\* packages._
 
----
-
-## R - locfit's `build.sh`
-
-```sh
-#!/bin/bash
-
-# R refuses to build packages that mark themselves as Priority: Recommended
-mv DESCRIPTION DESCRIPTION.old
-grep -v '^Priority: ' DESCRIPTION.old &gt; DESCRIPTION
-
-$R CMD INSTALL --build .
-```
-
----
-
-class: reduce70
-
-## R - locfit's `meta.yaml`
-
-```yaml
-package:
-  name: r-locfit
-  # Note that conda versions cannot contain -, so any -'s in the version have been replaced with _'s.
-  version: &quot;1.5_9.1&quot;
-
-source:
-  url: https://cran.r-project.org/src/contrib/locfit_1.5-9.1.tar.gz
-  md5: 38af7791c9cda78e2804020e65ac7fb4
-
-build:
-  number: 0
-  rpaths:
-    - lib/R/lib/
-    - lib/
-
-requirements:
-  build:
-    - gcc
-    - r-base
-    - r-lattice
-  run:
-    - libgcc
-    - r-base
-    - r-lattice
-
-test:
-  commands:
-    - $R -e &quot;library('locfit')&quot;
-
-about:
-  home: https://cran.rstudio.com/web/packages/locfit/index.html
-  license: GPL (&gt;= 2)
-  summary: 'Local regression, likelihood and density estimation.'
-```
+[Conda-Forge contribution guidelines](https://conda-forge.org/docs/maintainer/adding_pkgs.html)
 
 ---
 
@@ -1351,15 +1279,13 @@ class: reduce70
 
 ## Java - PeptideShaker's `meta.yaml`
 
+
 ```yaml
 ...
 
-
 source:
-    fn: {{ name }}-{{ version }}.zip
     url: http://genesis.ugent.be/maven2/eu/isas/peptideshaker/{{ name }}/{{ version }}/{{ name }}-{{ version }}.zip
     md5: 14a48413e28a25614f5fda2b381d7197
-
 
 requirements:
   build:
@@ -1372,6 +1298,7 @@ test:
       - peptide-shaker eu.isas.peptideshaker.cmd.PeptideShakerCLI
       - peptide-shaker eu.isas.peptideshaker.cmd.PeptideShakerCLI -Xms512m -Xmx1g
 ```
+
 
 ---
 
@@ -1398,7 +1325,6 @@ package:
   version: &quot;0.4214&quot;
 
 source:
-  fn: Module-Build-0.4214.tar.gz
   url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4214.tar.gz
   md5: 7b7ca5a47bef48c50c8b5906ca3ac7fb
 
@@ -1406,13 +1332,18 @@ build:
   number: 0
 
 requirements:
-  build:
-    - gcc
+  host:
     - perl
-
+    - perl-cpan-meta-yaml
+    - perl-extutils-parsexs
+    - perl-data-dumper
+    # [...]
   run:
-    - libgcc
     - perl
+    - perl-text-parsewords
+    - perl-cpan-meta
+    - perl-version
+    # [...]
 
 test:
   # Perl 'use' tests
@@ -1421,10 +1352,7 @@ test:
     - Module::Build::Base
     - Module::Build::Compat
     - Module::Build::Config
-    - Module::Build::Cookbook
-    - Module::Build::Dumper
-    - Module::Build::Notes
-    - Module::Build::PPMMaker
+    # [...]
 
 about:
   home: https://metacpan.org/pod/Module::Build
@@ -1450,7 +1378,7 @@ class: left
 
 ## CircleCI Continuous Building
 
-.image-70[![](../../images/circleci-logo.png)]
+.image-70[![circle ci logo](../../images/circleci-logo.png)]
 
 - Lint recipes.
 - Build and run tests.
@@ -1485,7 +1413,7 @@ $ circleci build
 
 
 ---
-### &lt;i class=&quot;fa fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
+### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
 - Conda and Bioconda are Galaxy best practices for connecting Galaxy tools to underlying applications and libraries.
@@ -1508,21 +1436,64 @@ $ circleci build
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors  ([Nicola Soranzo](/training-material/hall-of-fame#nsoranzo), [John Chilton](/training-material/hall-of-fame#jmchilton), [Björn Grüning](/training-material/hall-of-fame#bgruening), [Hervé Ménager](/training-material/hall-of-fame#hmenager)) !
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
+
+
+<div class="contributors-line">
+
+<a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a>
+
+
+<a href="/training-material/hall-of-fame/jmchilton/" class="contributor-badge contributor-jmchilton"><img src="https://avatars.githubusercontent.com/jmchilton?s=27" alt="Avatar">John Chilton</a>
+
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+
+<a href="/training-material/hall-of-fame/hmenager/" class="contributor-badge contributor-hmenager"><img src="https://avatars.githubusercontent.com/hmenager?s=27" alt="Avatar">Hervé Ménager</a>
+
+
+</div>
+
 
 
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
 
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
+
 
     </textarea>
-    <script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript">
-    </script>
+	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
+      var snippets = document.querySelectorAll('code.remark-code');
+        [].forEach.call(snippets,function(snippet){
+          snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+      var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.parentElement;
+      }});
     </script>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+
   </body>
 </html>

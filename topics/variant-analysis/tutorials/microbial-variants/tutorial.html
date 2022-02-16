@@ -6,43 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Microbial Variant Calling</title>
         
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-45719423-18' , 'auto');
-            ga('send', 'pageview');
-        </script>
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
         
         
         
-        <meta name="description" content="Exome sequencing means that all protein-coding genes in a..." />
+        <meta name="description" content="Genetic differences (variants) between healthy and diseas..." />
         <meta property="og:title" content="Galaxy Training: Microbial Variant Calling" />
-        <meta property="og:description" content="Exome sequencing means that all protein-coding genes in a..." />
+        <meta property="og:description" content="Genetic differences (variants) between healthy and diseas..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
     </head>
     <body data-spy="scroll" data-target="#toc">
-        
-
-
-
-
-
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
@@ -55,243 +43,164 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        
                         <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
-                            <i class="fa fa-folder-o" aria-hidden="true"></i><span class="visually-hidden">topic</span> Variant Analysis
+                            <i class="far fa-folder" aria-hidden="true"></i> Variant Analysis
                         </a>
-                    </li>
-
-                    
-                    
-                    
-
-                    
                         
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Introduction slides">
-                                    <i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Introduction slides
-                                </a>
-                                <div class="dropdown-menu">
-                                    
-                                        
-                                            
-                                                <a class="dropdown-item" href="/training-material/topics/variant-analysis/slides/introduction.html">
-                                                    Introduction to Variant analysis
-                                                </a>
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                </div>
-                            </li>
-                        
-                    
-
-                    
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-                                <i class="fa fa-cog" aria-hidden="true"></i><span class="visually-hidden">instances</span> Galaxy Instances
-                            </a>
-                            <div class="dropdown-menu">
-                                
-                                
-                                
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                        <a class="dropdown-item" href="http://galaxy-mel.genome.edu.au/galaxy/" title="GVL Melbourne">
-                                            GVL Melbourne
-                                        </a>
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                        <a class="dropdown-item" href="https://usegalaxy.eu" title="Galaxy Europe">
-                                            Galaxy Europe
-                                        </a>
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                
-                            </div>
-                        </li>
-                    
-
-                    
-
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://doi.org/10.5281/zenodo.582600" title="Links to data">
-                            <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span> Input Dataset
-                        </a>
                     </li>
-                    
-
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="/training-material/topics/variant-analysis#references" title="References">
-                            <i class="fa fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span> Literature
-                        </a>
-                    </li>
-                    
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="EN">
-                            EN
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
                         </a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-right">
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmicrobial-variants%2Ftutorial.html&edit-text=&act=url" title="">
-                                FR
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url">
+                            Français
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmicrobial-variants%2Ftutorial.html&edit-text=&act=url" title="">
-                                JA
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url">
+                            日本語
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmicrobial-variants%2Ftutorial.html&edit-text=&act=url" title="">
-                                ES
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url">
+                            Español
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmicrobial-variants%2Ftutorial.html&edit-text=&act=url" title="">
-                                PT
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url">
+                            Português
                             </a>
                             
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmicrobial-variants%2Ftutorial.html&edit-text=&act=url" title="">
-                                AR
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url">
+                            العربية
                             </a>
                             
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/microbial-variants/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="fa fa-life-ring" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Chat on Gitter">
-            Chat on Gitter
+        
+        <a class="dropdown-item" href="/training-material/topics/variant-analysis/faqs/" title="Check our FAQs for the Variant Analysis topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
         </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
         </a>
     </div>
 </li>
 
 
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/variant-analysis/tutorials/microbial-variants/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        
+            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+            </a>
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                <label data-value="default" class="btn btn-secondary">
+                    <input type="radio" name="options" id="default" autocomplete="off"> Default
+                </label>
+                <label data-value="night" class="btn btn-secondary">
+                    <input type="radio" name="options" id="night" autocomplete="off"> Night
+                </label>
+                <label data-value="midnight" class="btn btn-secondary">
+                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
+                </label>
+                <label data-value="rainbow" class="btn btn-secondary">
+                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
+                </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
+                <label data-value="halloween" class="btn btn-secondary">
+                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
+                </label>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/topics/variant-analysis/tutorials/microbial-variants/tutorial.html" title="Version 2019-02-07">2019-02-07</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/variant-analysis/tutorials/microbial-variants/tutorial.md">
-                            <i class="fa fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
-                        </a>
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
                     </li>
                 </ul>
             </div>
@@ -299,9 +208,33 @@
     </nav>
 </header>
 
-<div class="container main-content">
-    <script type="application/ld+json">
+        <div class="container main-content" role="main">
         
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<script type="application/ld+json">
+    
 
 
 {
@@ -339,16 +272,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Microbial Variant Calling",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -367,38 +297,56 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Variant Analysis",
+    "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+    "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/"
+  },
   "courseCode": "variant-analysis / microbial-variants / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Microbial Variant Calling' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Microbial Variant Calling",
-    "description": "Microbial Variant Calling",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html",
+  "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html",
   "timeRequired": "PT45M",
   "keywords": "prokaryote",
-  "description": "Microbial Variant Calling\\nThe questions this  addresses are:\n - How do we detect differences between a set of reads from a microorganism and a reference genome\n\n\\nThe objectives are:\n - Find variants between a reference genome and a set of reads\n - Visualise the SNP in context of the reads aligned to the genome\n - Determine the effect of those variants on genomic features\n - Understand if the SNP is potentially affecting the phenotype\n\n",
+  "description": "The questions this  addresses are:\n - How do we detect differences between a set of reads from a microorganism and a reference genome\n\n\\nThe objectives are:\n - Find variants between a reference genome and a set of reads\n - Visualise the SNP in context of the reads aligned to the genome\n - Determine the effect of those variants on genomic features\n - Understand if the SNP is potentially affecting the phenotype\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
+      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses"
+      "description": "Introduction to Galaxy Analyses",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
     },
     {
       "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
-      "name": "Hands-on for 'quality-control' tutorial",
-      "description": "quality-control",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
+      "name": "Quality Control",
+      "description": "Slides for 'Quality Control' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
+      "name": "Quality Control",
+      "description": "Hands-on for 'Quality Control' tutorial",
       "learningResourceType": "hands-on tutorial",
       "interactivityType": "expositive",
       "provider": {
@@ -410,9 +358,23 @@
     },
     {
       "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
-      "name": "Hands-on for 'mapping' tutorial",
-      "description": "mapping",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
+      "name": "Mapping",
+      "description": "Slides for 'Mapping' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
+      "name": "Mapping",
+      "description": "Hands-on for 'Mapping' tutorial",
       "learningResourceType": "hands-on tutorial",
       "interactivityType": "expositive",
       "provider": {
@@ -425,13 +387,6 @@
   ],
   "hasPart": [
 
-  ],
-  "mentions": [
-    {
-      "@type": "Thing",
-      "url": "https://doi.org/10.5281/zenodo.582600",
-      "name": "Training data for Microbial Variant Calling tutorial"
-    }
   ],
   "author": [
     {
@@ -465,8 +420,8 @@
     {
       "@type": "CreativeWork",
       "name": "Variant Analysis",
-      "description": "Exome sequencing means that all protein-coding genes in a genome are sequenced",
-      "url": "https://galaxyproject.github.io//training-material/topics/variant-analysis/"
+      "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+      "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/"
     },
     {
       "@type": "DefinedTerm",
@@ -477,42 +432,62 @@
     }
   ]
 }
-    </script>
+</script>
 
-    <section class="tutorial">
-        <h1 data-toc-skip>Microbial Variant Calling</h1>
-        <div class="contributors-line">By: 
-  
-  <a href="/training-material/hall-of-fame#annasyme" class="contributor-badge"><img src="https://avatars.githubusercontent.com/annasyme" alt="Anna Syme">Anna Syme</a>, 
-  <a href="/training-material/hall-of-fame#slugger70" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a>, 
-  <a href="/training-material/hall-of-fame#tseemann" class="contributor-badge"><img src="https://avatars.githubusercontent.com/tseemann" alt="Torsten Seemann">Torsten Seemann</a> </div>
-        <blockquote class="overview">
-            <h3>Overview</h3>
+<section class="tutorial topic-variant-analysis">
+    <h1 data-toc-skip>Microbial Variant Calling</h1>
+    
 
-            <strong><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
-            <ul>
-            
-            <li>How do we detect differences between a set of reads from a microorganism and a reference genome</li>
-            
-            </ul>
 
-            <strong><i class="fa fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
-            <ul>
-            
-            <li>Find variants between a reference genome and a set of reads</li>
-            
-            <li>Visualise the SNP in context of the reads aligned to the genome</li>
-            
-            <li>Determine the effect of those variants on genomic features</li>
-            
-            <li>Understand if the SNP is potentially affecting the phenotype</li>
-            
-            </ul>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a>
 
-            
-            <strong><i class="fa fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
-            <ul>
-            
+
+<a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+
+
+<a href="/training-material/hall-of-fame/tseemann/" class="contributor-badge contributor-tseemann"><img src="https://avatars.githubusercontent.com/tseemann?s=27" alt="Avatar">Torsten Seemann</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+</div>
+
+
+    <blockquote class="overview">
+        <h3>Overview</h3>
+        
+        <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
+        <ul>
+        
+        <li><p>How do we detect differences between a set of reads from a microorganism and a reference genome</p>
+</li>
+        
+        </ul>
+
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
+        <ul>
+        
+        <li><p>Find variants between a reference genome and a set of reads</p>
+</li>
+        
+        <li><p>Visualise the SNP in context of the reads aligned to the genome</p>
+</li>
+        
+        <li><p>Determine the effect of those variants on genomic features</p>
+</li>
+        
+        <li><p>Understand if the SNP is potentially affecting the phenotype</p>
+</li>
+        
+        </ul>
+
+        
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
+        <ul>
+        
     <li>
     
         
@@ -537,17 +512,15 @@
                             
                             <li> Quality Control:
                             
-                                <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html"><i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
                                 
                             
                             
-                                - <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html"><i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
                             
                             </li>
-                        
-                    
-                        
-                    
                         
                     
                         
@@ -558,17 +531,15 @@
                             
                             <li> Mapping:
                             
-                                <a href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html"><i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                <a href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
                                 
                             
                             
-                                - <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html"><i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
                             
                             </li>
-                        
-                    
-                        
-                    
                         
                     
                         
@@ -581,33 +552,301 @@
     
     </li>
 
+        
+        </ul>
+        
+
+        
+        <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i> Time estimation:</strong> 45 minutes</div>
+        
+
+        
+
+        
+        
+
+        
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
+        <ul class="supporting_material">
             
-            </ul>
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/variant-analysis/slides/introduction.html" title="Topic Overview slides">
+                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
+                </a></li>
             
 
             
-            <p><strong><i class="fa fa-hourglass-end" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 45 minutes</p>
-            
-        </blockquote>
+                <li class="btn btn-default supporting_material">
 
-        <div class="container">
-            <div class="row">
-                <!-- sidebar, which will move to the top on a small screen -->
-                <div class="col-sm-2">
-                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                </div>
-                <div class="col-sm-10">
-                    <h1 class="no_toc" id="introduction">Introduction</h1>
+
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.582600">
+    <i class="far fa-copy" aria-hidden="true"></i> Datasets
+</a>
+
+</li>
+            
+
+            
+                <li class="btn btn-default supporting_material">
+
+
+    <a class="topic-icon" href="/training-material/topics/variant-analysis/tutorials/microbial-variants/workflows/" title="Workflows" alt="Microbial Variant Calling workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
+    </a>
+
+</li>
+            
+
+            
+                <li class="btn btn-default supporting_material">
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/variant-analysis/tutorials/microbial-variants/tours/" title="Galaxy interactive tour" >
+    <i class="fas fa-magic" aria-hidden="true"></i> Tours
+</a>
+
+</li>
+            
+
+            
+
+            
+            
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+            
+                <li class="btn btn-default supporting_material">
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+    </a>
+    <ul class="dropdown-menu">
+    
+        <li>
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/variant-analysis/docker" title="Docker image for this tutorial">
+                <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
+            </a>
+        </li>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+</li>
+            
+        </ul>
+        
+
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 23, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
+    </blockquote>
+
+    <div class="container">
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-2">
+                <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
+            </div>
+            <div class="col-sm-10">
+                 
+
+                <h1 class="no_toc" id="introduction">Introduction</h1>
 
 <p>Variant calling is the process of identifying differences between two genome samples. Usually differences are limited to single nucleotide polymorphisms (SNPs) and small insertions and deletions (indels). Larger structural variation such as inversions, duplications and large deletions are not typically covered by “variant calling”.</p>
 
 <p>Imagine that you have been asked to find the differences between a sample that has been sequenced and a known genome. For example: You have a new sample from a patient and you want to see if it has any differences from a well known reference genome of the same species. Typically, you would have a couple of fastq read files sent back to you from the sequencing provider and either an annotated or non annotated reference genome.</p>
 
-<p>In this tutorial, we will use the tool “Snippy” (link to Snippy is <a href="https://github.com/tseemann/snippy">here</a>) to find high confidence differences (indels or SNPs) between our known genome and our reads. Snippy uses one tool to align the reads to the reference genome, and another tool to decide (“call”) if any of the resulting discrepancies are real variants or technical artifacts that can be ignored. Finally, Snippy uses another tool to check what effect these differences have on the predicted genes - truncation, frame shift or if the changes are synonymous.</p>
+<p>In this tutorial, we will use the tool “Snippy” (link to Snippy is <a href="https://github.com/tseemann/snippy">here</a>) to find high confidence differences (indels or SNPs) between our known genome and our <span class="notranslate">reads</span>. Snippy uses one tool to align the <span class="notranslate">reads</span> to the reference genome, and another tool to decide (“call”) if any of the resulting discrepancies are real variants or technical artifacts that can be ignored. Finally, Snippy uses another tool to check what effect these differences have on the predicted genes - truncation, frame shift or if the changes are synonymous.</p>
 
-<p>For the read alignment (read mapping) step, Snippy uses BWA MEM with a custom set of settings which are very suitable to aligning reads for microbial type data. For the variant calling step, Smippy uses Freebayes with a custom set of settings. snpeff is then used to describe what the predicted changes do in terms of the genes themselves.</p>
+<p>For the read alignment (read <span class="notranslate">mapping</span>) step, Snippy uses BWA MEM with a custom set of settings which are very suitable to aligning <span class="notranslate">reads</span> for microbial type data. For the variant calling step, Snippy uses Freebayes with a custom set of settings. snpeff is then used to describe what the predicted changes do in terms of the genes themselves.</p>
 
-<p>The Galaxy wrapper for Snippy has the ability to change some of the underlying tool settings in the advanced section but it is not recommended.</p>
+<p>The <span class="notranslate">Galaxy</span> wrapper for Snippy has the ability to change some of the underlying tool settings in the advanced section but it is not recommended.</p>
 
 <p>More can be read about SNP calling <a href="https://en.wikipedia.org/wiki/SNV_calling_from_NGS_data">here</a></p>
 
@@ -629,27 +868,27 @@
 
 <p>The data for today is a subset of a real dataset from a <em>Staphylococcus aureus</em> bacteria.
 We have a closed genome sequence and an annotation for our “wildtype” strain.
-We have used a whole genome shotgun approach to produce a set of short sequence reads on an Illumina DNA sequencing instrument for our mutant strain.</p>
+We have used a whole genome shotgun approach to produce a set of short sequence <span class="notranslate">reads</span> on an Illumina <span class="notranslate">DNA</span> sequencing instrument for our mutant strain.</p>
 
 <ul>
-  <li>The reads are paired-end</li>
+  <li>The <span class="notranslate">reads</span> are paired-end</li>
   <li>Each read is on average 150 bases</li>
-  <li>The reads would cover the original wildtype genome to a depth of 19x</li>
+  <li>The <span class="notranslate">reads</span> would cover the original wildtype genome to a depth of 19x</li>
 </ul>
 
 <p>The files we will be using are:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">mutant_R1.fastq</code> &amp; <code class="highlighter-rouge">mutant_R2.fastq</code> - the read files in fastq format.</li>
-  <li><code class="highlighter-rouge">wildtype.fna</code> - The sequence of the reference strain in fasta format.</li>
-  <li><code class="highlighter-rouge">wildtype.gbk</code> - The reference strain with gene and other annotations in genbank format.</li>
-  <li><code class="highlighter-rouge">wildtype.gff</code> - The reference strain with gene and other annotations in gff3 format.</li>
+  <li><code class="language-plaintext highlighter-rouge">mutant_R1.fastq</code> &amp; <code class="language-plaintext highlighter-rouge">mutant_R2.fastq</code> - the read files in fastq format.</li>
+  <li><code class="language-plaintext highlighter-rouge">wildtype.fna</code> - The sequence of the reference strain in fasta format.</li>
+  <li><code class="language-plaintext highlighter-rouge">wildtype.gbk</code> - The reference strain with gene and other annotations in genbank format.</li>
+  <li><code class="language-plaintext highlighter-rouge">wildtype.gff</code> - The reference strain with gene and other annotations in gff3 format.</li>
 </ul>
 
 <p>This data is available at Zenodo using the following <a href="https://doi.org/10.5281/zenodo.582600">link</a>.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-get-the-data"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Get the data</h3>
+  <h3 id="hands_on-hands-on-get-the-data"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Get the data</h3>
 
   <ol>
     <li>Import all of the following files into a new history:
@@ -661,24 +900,15 @@ We have used a whole genome shotgun approach to produce a set of short sequence 
         <li><a href="https://zenodo.org/record/582600/files/wildtype.gff">wildtype.gff</a></li>
       </ul>
 
-      <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/582600/files/mutant_R1.fastq
-https://zenodo.org/record/582600/files/mutant_R2.fastq
-https://zenodo.org/record/582600/files/wildtype.fna
-https://zenodo.org/record/582600/files/wildtype.gbk
-https://zenodo.org/record/582600/files/wildtype.gff
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://zenodo.org/record/582600/files/mutant_R1.fastq
+ https://zenodo.org/record/582600/files/mutant_R2.fastq
+ https://zenodo.org/record/582600/files/wildtype.fna
+ https://zenodo.org/record/582600/files/wildtype.gbk
+ https://zenodo.org/record/582600/files/wildtype.gff
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-        <h3 id="tip-tip-importing-data-via-links"><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>Open the Galaxy Upload Manager</li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>Paste the link into the text field</li>
-          <li>Press <strong>Start</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li><strong>Close</strong> the window</li></ul></blockquote>
     </li>
   </ol>
 
@@ -686,24 +916,24 @@ https://zenodo.org/record/582600/files/wildtype.gff
 
 <h1 id="find-variants-with-snippy">Find variants with Snippy</h1>
 
-<p>We will now run the Snippy tool on our reads, comparing it to the reference.</p>
+<p>We will now run the Snippy tool on our <span class="notranslate">reads</span>, comparing it to the reference.</p>
 
-<p>Snippy is a tool for rapid bacterial SNP calling and core genome alignments. Snippy finds SNPs between a haploid reference genome and your NGS sequence reads. It will find both substitutions (snps) and insertions/deletions (indels).</p>
+<p>Snippy is a tool for rapid bacterial SNP calling and core genome alignments. Snippy finds SNPs between a haploid reference genome and your NGS sequence <span class="notranslate">reads</span>. It will find both substitutions (snps) and insertions/deletions (indels).</p>
 
 <p>If we give Snippy an annotated reference, it will silently run a tool called SnpEff which will figure out the effect of any changes on the genes and other features. If we just give Snippy the reference sequence alone without the annotations, it will not run SnpEff.</p>
 
 <p>We have an annotated reference and so will use it in this case.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-run-snippy"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run Snippy</h3>
+  <h3 id="hands_on-hands-on-run-snippy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run Snippy</h3>
 
   <ol>
-    <li><strong>Snippy</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><strong>Snippy</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
       <ul>
-        <li>“Reference File” to the <code class="highlighter-rouge">wildtype.gbk</code> file (if the genbank file is not selectable, make sure to change its datatype to ‘genbank’)</li>
-        <li>“Single or Paired-end reads” to <code class="highlighter-rouge">Paired</code></li>
-        <li>“Select first set of reads” to <code class="highlighter-rouge">mutant_R1.fastq</code></li>
-        <li>“Select second set of reads” to <code class="highlighter-rouge">mutant_R2.fastq</code></li>
+        <li>“Reference File” to the <code class="language-plaintext highlighter-rouge">wildtype.gbk</code> file (if the genbank file is not selectable, make sure to change its datatype to ‘genbank’)</li>
+        <li>“Single or Paired-end <span class="notranslate">reads</span>” to <code class="language-plaintext highlighter-rouge">Paired</code></li>
+        <li>“Select first set of <span class="notranslate">reads</span>” to <code class="language-plaintext highlighter-rouge">mutant_R1.fastq</code></li>
+        <li>“Select second set of <span class="notranslate">reads</span>” to <code class="language-plaintext highlighter-rouge">mutant_R2.fastq</code></li>
         <li>Select all outputs</li>
       </ul>
     </li>
@@ -713,7 +943,7 @@ https://zenodo.org/record/582600/files/wildtype.gff
 
 <h1 id="examine-snippy-output">Examine Snippy output</h1>
 
-<p>Snippy has taken the reads, mapped them against the reference using BWA MEM, looked through the resulting BAM file and found differences using some fancy Bayesian statistics (Freebayes), filtered the differences for sensibility and finally checked what effect these differences will have on the predicted genes and other features in the genome.</p>
+<p>Snippy has taken the <span class="notranslate">reads</span>, mapped them against the reference using BWA MEM, looked through the resulting BAM file and found differences using some fancy Bayesian statistics (Freebayes), filtered the differences for sensibility and finally checked what effect these differences will have on the predicted genes and other features in the genome.</p>
 
 <p>It produces quite a bit of output, there can be up to 10 output files.</p>
 
@@ -754,12 +984,12 @@ https://zenodo.org/record/582600/files/wildtype.gff
       <td>A version of the reference genome with all variants instantiated</td>
     </tr>
     <tr>
-      <td>mapping depth</td>
-      <td>A table of the mapping depth</td>
+      <td><span class="notranslate">mapping</span> depth</td>
+      <td>A table of the <span class="notranslate">mapping</span> depth</td>
     </tr>
     <tr>
-      <td>mapped reads bam</td>
-      <td>A BAM file containing all of the mapped reads</td>
+      <td>mapped <span class="notranslate">reads</span> bam</td>
+      <td>A BAM file containing all of the mapped <span class="notranslate">reads</span></td>
     </tr>
     <tr>
       <td>outdir</td>
@@ -768,29 +998,29 @@ https://zenodo.org/record/582600/files/wildtype.gff
   </tbody>
 </table>
 
-<p>We will now have a look at the contents of the SNP table file (<code class="highlighter-rouge">snippy on data XX, data XX and data XX table</code>):</p>
+<p>We will now have a look at the contents of the SNP table file (<code class="language-plaintext highlighter-rouge">snippy on data XX, data XX and data XX table</code>):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1   2   3   4   5   6   7   8   9   10  11  12  13  14
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1   2   3   4   5   6   7   8   9   10  11  12  13  14
 CHROM   POS TYPE    REF ALT EVIDENCE    FTYPE   STRAND  NT_POS  AA_POS  EFFECT  LOCUS_TAG   GENE    PRODUCT
 Wildtype    24388   snp A   G   G:22 A:0    CDS +   1/702   1/233   initiator_codon_variant c.1A&gt;G p.Met1?  WILD_00022  walR    Transcriptional regulatory protein WalR
 Wildtype    29479   snp T   G   G:21 T:0    CDS +   39/792  13/263  synonymous_variant c.39T&gt;G p.Gly13Gly   WILD_00026  yycJ    Putative metallo-hydrolase YycJ
 Wildtype    47299   snp T   A   A:24 T:0    CDS +   54/1758 18/585  stop_gained c.54T&gt;A p.Cys18*    WILD_00043  mecR1   Methicillin resistance mecR1 protein
 Wildtype    102969  snp G   C   C:16 G:0    CDS -   87/1281 29/426  synonymous_variant c.87C&gt;G p.Gly29Gly   WILD_00093  spa Immunoglobulin G-binding protein A
 Wildtype    103048  snp T   A   A:20 T:0    CDS -   8/1281  3/426   missense_variant c.8A&gt;T p.Lys3Met   WILD_00093  spa Immunoglobulin G-binding protein A
-Wildtype    103379  del GAA GA  GA:11 GAA:0                             
+Wildtype    103379  del GAA GA  GA:11 GAA:0
 Wildtype    106602  snp T   G   G:21 T:0    CDS -   993/993 331/330 stop_lost&amp;splice_region_variant c.993A&gt;C p.Ter331Tyrext*?   WILD_00097  yfiY    putative siderophore-binding lipoprotein YfiY
 Wildtype    109833  snp T   A   A:16 T:0    CDS +   1/1755  1/584   initiator_codon_variant c.1T&gt;A p.Leu1?  WILD_00100  iucC_1  Aerobactin synthase
 Wildtype    114540  del ATT AT  AT:25 ATT:0 CDS +   1717/1737   573/578 frameshift_variant c.1717delT p.Cys573fs    WILD_00102  iucA    N(2)-citryl-N(6)-acetyl-N(6)-hydroxylysine synthase
 Wildtype    129881  mnp GT  AA  AA:18 GT:0  CDS +   55/708  19/235  missense_variant c.55_56delGTinsAA p.Val19Asn   WILD_00117  deoD    Purine nucleoside phosphorylase DeoD-type
 Wildtype    138877  snp G   C   C:14 G:0    CDS +   1119/1545   373/514 missense_variant c.1119G&gt;C p.Trp373Cys  WILD_00125      hypothetical protein
 Wildtype    138920  snp A   G   G:10 A:0    CDS +   1162/1545   388/514 missense_variant c.1162A&gt;G p.Lys388Glu  WILD_00125      hypothetical protein
-Wildtype    160547  del GTC GC  GC:18 GTC:0                             
-Wildtype    160552  del CTA CA  CA:20 CTA:0                             
+Wildtype    160547  del GTC GC  GC:18 GTC:0
+Wildtype    160552  del CTA CA  CA:20 CTA:0
 Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_variant c.28delA p.Asn10fs   WILD_00166  brnQ    Branched-chain amino acid transport system 2 carrier protein
 </code></pre></div></div>
 
 <blockquote class="question">
-  <h3 id="question-question"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
+  <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
 
   <ol>
     <li>Which types of variants have been found?</li>
@@ -800,7 +1030,7 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
   </ol>
 
   <blockquote class="solution">
-    <h3 id="solution-solution"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+    <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
     <ol>
       <li>In the 3rd column, you have “snp” for SNP, “del” for deletion, “mnp” for</li>
       <li>This is a T→A mutation, causing a stop codon</li>
@@ -812,66 +1042,66 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
 
 <h1 id="view-snippy-output-in-jbrowse">View Snippy output in JBrowse</h1>
 
-<p>We could go through all of the variants like this and read them out of a text table, but this is onerous and doesn’t really give the context of the changes very well. It would be much nicer to have a visualisation of the SNPs and the other relevant data. In Galaxy we can use a tool called JBrowse.</p>
+<p>We could go through all of the variants like this and read them out of a text table, but this is onerous and doesn’t really give the context of the changes very well. It would be much nicer to have a visualisation of the SNPs and the other relevant data. In <span class="notranslate">Galaxy</span> we can use a tool called JBrowse.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-run-jbrowse"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run JBrowse</h3>
+  <h3 id="hands_on-hands-on-run-jbrowse"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run JBrowse</h3>
 
   <ol>
-    <li><strong>JBrowse</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><strong>JBrowse</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
       <ul>
-        <li>“Reference genome to display” to <code class="highlighter-rouge">Use a genome from history</code></li>
+        <li>“Reference genome to display” to <code class="language-plaintext highlighter-rouge">Use a genome from history</code></li>
         <li>
-          <p>“Select the reference genome” to <code class="highlighter-rouge">wildtype.fna</code></p>
+          <p>“Select the reference genome” to <code class="language-plaintext highlighter-rouge">wildtype.fna</code></p>
 
           <p>This sequence will be the reference against which annotations are displayed</p>
         </li>
-        <li>“Produce Standalone Instance” to <code class="highlighter-rouge">Yes</code></li>
-        <li>“Genetic Code” to <code class="highlighter-rouge">11: The Bacterial, Archaeal and Plant Plastid Code</code></li>
-        <li>“JBrowse-in-Galaxy Action” to <code class="highlighter-rouge">New JBrowse Instance</code></li>
+        <li>“Produce Standalone Instance” to <code class="language-plaintext highlighter-rouge">Yes</code></li>
+        <li>“Genetic Code” to <code class="language-plaintext highlighter-rouge">11: The Bacterial, Archaeal and Plant Plastid Code</code></li>
+        <li>“JBrowse-in-<span class="notranslate">Galaxy</span> Action” to <code class="language-plaintext highlighter-rouge">New JBrowse Instance</code></li>
         <li>
           <p>“Track Group”</p>
 
-          <p>We will now set up three different tracks - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the sequence reads (the .bam file), the variants found by snippy (the .gff file) and the annotated reference genome (the wildtype.gff)</p>
+          <p>We will now set up three different tracks - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the sequence <span class="notranslate">reads</span> (the .bam file), the variants found by snippy (the .gff file) and the annotated reference genome (the wildtype.gff)</p>
 
           <ul>
-            <li><strong>Track 1 - sequence reads</strong>: Click on <code class="highlighter-rouge">Insert Track Group</code> and fill it with
+            <li><strong>Track 1 - sequence <span class="notranslate">reads</span></strong>: Click on <code class="language-plaintext highlighter-rouge">Insert Track Group</code> and fill it with
               <ul>
-                <li>“Track Category” to <code class="highlighter-rouge">sequence reads</code></li>
-                <li>Click on <code class="highlighter-rouge">Insert Annotation Track</code> and fill it with
+                <li>“Track Category” to <code class="language-plaintext highlighter-rouge">sequence <span class="notranslate">reads</span></code></li>
+                <li>Click on <code class="language-plaintext highlighter-rouge">Insert Annotation Track</code> and fill it with
                   <ul>
-                    <li>“Track Type” to <code class="highlighter-rouge">BAM Pileups</code></li>
-                    <li>“BAM Track Data” to <code class="highlighter-rouge">snippy bam file</code></li>
-                    <li>“Autogenerate SNP Track” to <code class="highlighter-rouge">Yes</code></li>
-                    <li>“Track Visibility” to <code class="highlighter-rouge">On for new users</code></li>
+                    <li>“Track Type” to <code class="language-plaintext highlighter-rouge">BAM Pileups</code></li>
+                    <li>“BAM Track Data” to <code class="language-plaintext highlighter-rouge">snippy bam file</code></li>
+                    <li>“Autogenerate SNP Track” to <code class="language-plaintext highlighter-rouge">Yes</code></li>
+                    <li>“Track Visibility” to <code class="language-plaintext highlighter-rouge">On for new users</code></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><strong>Track 2 - variants</strong>: Click on <code class="highlighter-rouge">Insert Track Group</code> and fill it with
+            <li><strong>Track 2 - variants</strong>: Click on <code class="language-plaintext highlighter-rouge">Insert Track Group</code> and fill it with
               <ul>
-                <li>“Track Category” to <code class="highlighter-rouge">variants</code></li>
-                <li>Click on <code class="highlighter-rouge">Insert Annotation Track</code> and fill it with
+                <li>“Track Category” to <code class="language-plaintext highlighter-rouge">variants</code></li>
+                <li>Click on <code class="language-plaintext highlighter-rouge">Insert Annotation Track</code> and fill it with
                   <ul>
-                    <li>“Track Type” to <code class="highlighter-rouge">GFF/GFF3/BED/GBK Features</code></li>
-                    <li>“GFF/GFF3/BED Track Data” to <code class="highlighter-rouge">snippy snps gff file</code></li>
-                    <li>“Track Visibility” to <code class="highlighter-rouge">On for new users</code></li>
+                    <li>“Track Type” to <code class="language-plaintext highlighter-rouge">GFF/GFF3/<span class="notranslate">BED</span> Features</code></li>
+                    <li>“GFF/GFF3/<span class="notranslate">BED</span> Track Data” to <code class="language-plaintext highlighter-rouge">snippy snps gff file</code></li>
+                    <li>“Track Visibility” to <code class="language-plaintext highlighter-rouge">On for new users</code></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><strong>Track 3 - annotated reference</strong>: Click on <code class="highlighter-rouge">Insert Track Group</code> and fill it with
+            <li><strong>Track 3 - annotated reference</strong>: Click on <code class="language-plaintext highlighter-rouge">Insert Track Group</code> and fill it with
               <ul>
-                <li>“Track Category” to <code class="highlighter-rouge">annotated reference</code></li>
-                <li>Click on <code class="highlighter-rouge">Insert Annotation Track</code> and fill it with
+                <li>“Track Category” to <code class="language-plaintext highlighter-rouge">annotated reference</code></li>
+                <li>Click on <code class="language-plaintext highlighter-rouge">Insert Annotation Track</code> and fill it with
                   <ul>
-                    <li>“Track Type” to <code class="highlighter-rouge">GFF/GFF3/BED/GBK Features</code></li>
-                    <li>“GFF/GFF3/BED Track Data” to <code class="highlighter-rouge">wildtype.gff</code></li>
-                    <li>“JBrowse Track Type [Advanced]” to <code class="highlighter-rouge">Canvas Features</code></li>
+                    <li>“Track Type” to <code class="language-plaintext highlighter-rouge">GFF/GFF3/<span class="notranslate">BED</span> Features</code></li>
+                    <li>“GFF/GFF3/<span class="notranslate">BED</span> Track Data” to <code class="language-plaintext highlighter-rouge">wildtype.gff</code></li>
+                    <li>“JBrowse Track Type [Advanced]” to <code class="language-plaintext highlighter-rouge">Canvas Features</code></li>
                     <li>Click on “JBrowse Styling Options [Advanced]”</li>
-                    <li>“JBrowse style.label” to <code class="highlighter-rouge">product</code></li>
-                    <li>“JBrowse style.description” to <code class="highlighter-rouge">product</code></li>
-                    <li>“Track Visibility” to <code class="highlighter-rouge">On for new users</code></li>
+                    <li>“JBrowse style.label” to <code class="language-plaintext highlighter-rouge">product</code></li>
+                    <li>“JBrowse style.description” to <code class="language-plaintext highlighter-rouge">product</code></li>
+                    <li>“Track Visibility” to <code class="language-plaintext highlighter-rouge">On for new users</code></li>
                   </ul>
                 </li>
               </ul>
@@ -883,16 +1113,16 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
   </ol>
 </blockquote>
 
-<p>A new dataset will be created in your history, containing the JBrowse interactive visualisation. We will now view its contents and play with it by clicking the <i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> (eye) icon of the <code class="highlighter-rouge">JBrowse on data XX and data XX - Complete</code> dataset. The JBrowse window will appear in the centre Galaxy panel.</p>
+<p>A new dataset will be created in your history, containing the JBrowse interactive visualisation. We will now view its contents and play with it by clicking the <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> (eye) icon of the <code class="language-plaintext highlighter-rouge">JBrowse on data XX and data XX - Complete</code> dataset. The JBrowse window will appear in the centre <span class="notranslate">Galaxy</span> panel.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-inspecting-the-snps-using-jbrowse"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Inspecting the SNPs using JBrowse</h3>
+  <h3 id="hands_on-hands-on-inspecting-the-snps-using-jbrowse"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Inspecting the SNPs using JBrowse</h3>
   <ol>
     <li>Display all the tracks and practice maneuvering around
       <ol>
         <li>Click on the tick boxes on the left to display the tracks</li>
-        <li>Zoom out by clicking on the <code class="highlighter-rouge">minus</code> button to see sequence reads and their coverage (the grey graph)</li>
-        <li>Zoom in by clicking on the <code class="highlighter-rouge">plus</code> button to see
+        <li>Zoom out by clicking on the <code class="language-plaintext highlighter-rouge">minus</code> button to see sequence <span class="notranslate">reads</span> and their coverage (the grey graph)</li>
+        <li>Zoom in by clicking on the <code class="language-plaintext highlighter-rouge">plus</code> button to see
           <ul>
             <li>probable real variants (a whole column of SNPs)</li>
             <li>probable errors (single one here and there)</li>
@@ -900,18 +1130,18 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
         </li>
       </ol>
 
-      <figure id="figure-1"><img src="../../images/jbrowse1.png" alt="JBrowse screenshot" title="Screenshot of JBrowse" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Screenshot of JBrowse</figcaption></figure>
+      <figure id="figure-1"><img src="../../images/jbrowse1.png" alt="JBrowse screenshot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Screenshot of JBrowse</figcaption></figure>
     </li>
     <li>Look at the stop SNP
       <ol>
-        <li>Type <code class="highlighter-rouge">47299</code> in the coordinates box</li>
-        <li>Click on <code class="highlighter-rouge">Go</code> to see the position of the SNP discussed above</li>
+        <li>Type <code class="language-plaintext highlighter-rouge">47299</code> in the coordinates box</li>
+        <li>Click on <code class="language-plaintext highlighter-rouge">Go</code> to see the position of the SNP discussed above</li>
       </ol>
 
-      <figure id="figure-2"><img src="../../images/jbrowse2.png" alt="JBrowse screenshot" title="Inspection of the STOP SNP using JBrowse" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Inspection of the STOP SNP using JBrowse</figcaption></figure>
+      <figure id="figure-2"><img src="../../images/jbrowse2.png" alt="JBrowse screenshot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Inspection of the STOP SNP using JBrowse</figcaption></figure>
 
       <blockquote class="question">
-        <h3 id="question-questions"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+        <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
 
         <ol>
           <li>What is the correct codon at this position?</li>
@@ -919,7 +1149,7 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
         </ol>
 
         <blockquote class="solution">
-          <h3 id="solution-solution-1"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+          <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
           <ol>
             <li>The correct codon at this position is TGT, coding for the amino acid Cysteine (middle row of the amino acid translations).</li>
             <li>The mutation of T → A turns this triplet into TGA, a stop codon.</li>
@@ -935,69 +1165,141 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
 
 <p>By running a tool such as Snippy on your read files and reference genome, we can find where the biologically important changes between genomes of different strains occur and perhaps what they mean to the phenotype.</p>
 
+
+                
+                <blockquote class="key_points">
+                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <ul>
+                        
+                        <li><p>We used a tool called Snippy to call variants between our reads and our reference genome.</p>
+</li>
+                        
+                        <li><p>As our reference genome had annotations, we could see what effect the changes have on the features as annotated in the reference and therefore make inferences on the possible changes to the phenotype.</p>
+</li>
+                        
+                        <li><p>We used the JBrowse genome browser to visualise what these changes look like.</p>
+</li>
+                        
+                    </ul>
+                </blockquote>
+                
+
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the  <a href="/training-material/topics/variant-analysis/faqs/">FAQ page for the Variant Analysis topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
+                <h1 data-toc-skip>Useful literature</h1>
+                <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
+                
+
+                
+
+                
+
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
+
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
                 </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
+                            }
+                        }
+
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
+
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Microbial Variant Calling (Variant Analysis)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
+
+
+
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">Anna Syme, Simon Gladman, Torsten Seemann, 2021 <b>Microbial Variant Calling (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html">https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+
+                <blockquote class="details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                  <p style="display: none;">
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{variant-analysis-microbial-variants,
+author = "Anna Syme and Simon Gladman and Torsten Seemann",
+title = "Microbial Variant Calling (Galaxy Training Materials)",
+year = "2021",
+month = "03",
+day = "23"
+url = "\url{https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html}",
+note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+    doi = {10.1016/j.cels.2018.05.012},
+    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+    year = 2018,
+    month = {jun},
+    publisher = {Elsevier {BV}},
+    volume = {6},
+    number = {6},
+    pages = {752--758.e1},
+    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+    title = {Community-Driven Data Analysis Training for Biology},
+    journal = {Cell Systems}
+}</code>
+                </pre></div></div>
+                </p>
+                </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+
+                
+
+                
+
             </div>
         </div>
-
-        
-        <blockquote class="key_points">
-            <h3><i class="fa fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
-
-            <ul>
-                
-                <li>We used a tool called Snippy to call variants between our reads and our reference genome.</li>
-                
-                <li>As our reference genome had annotations, we could see what effect the changes have on the features as annotated in the reference and therefore make inferences on the possible changes to the phenotype.</li>
-                
-                <li>We used the JBrowse genome browser to visualise what these changes look like.</li>
-                
-            </ul>
-        </blockquote>
-        
-
-        
-        <h1 data-toc-skip>Useful literature</h1>
-        <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
-        
-
-        <h3><i class="fa fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
-
-        <hr>
-        <br>
-
-        <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Microbial Variant Calling (Variant Analysis)">Loading...
-        </iframe>
-
-        <blockquote class="feedback">
-            <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Give us even more feedback on this content!</h3>
-            <p>To give us more detailed feedback about these materials, please take a moment to fill in the extended <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_GLZRpxZGAL9tN6DA1bE6WkNhmQdXT7B16TpOb-X4YwKUsQ/viewform?entry.1548889262=Microbial Variant Calling (Variant Analysis)">Feedback Form</a>.</p>
-        </blockquote>
-    </section>
-</div>
-
-
-<footer>
-    <div class="container">
-        <p>
-            This material is the result of a collaborative work. Thanks to the
-            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (
-  
-  <a href="/training-material/hall-of-fame#annasyme" class="contributor-badge"><img src="https://avatars.githubusercontent.com/annasyme" alt="Anna Syme">Anna Syme</a>, 
-  <a href="/training-material/hall-of-fame#slugger70" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a>, 
-  <a href="/training-material/hall-of-fame#tseemann" class="contributor-badge"><img src="https://avatars.githubusercontent.com/tseemann" alt="Torsten Seemann">Torsten Seemann</a>)!
-        </p>
-        <p>
-            Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/microbial-variants/tutorial.md">GitHub</a>.
-        </p>
     </div>
-</footer>
+</section>
+<br/>
+<br/>
+<br/>
 
+        </div>
+        
     </body>
     <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
@@ -1006,4 +1308,31 @@ Wildtype    190866  del GTT GT  GT:18 GTT:0 CDS -   28/1356 10/451  frameshift_v
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>
