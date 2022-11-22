@@ -15,6 +15,7 @@
       "gitter": "abretaud",
       "orcid": "0000-0003-0914-2470",
       "joined": "2017-09",
+      "elixir_node": "fr",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json"
     },
@@ -22,6 +23,8 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
+      "orcid": "0000-0002-6100-4385",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     },
@@ -41,29 +44,7 @@
     }
   ],
   "level": "Intermediate",
-  "last_modified_at": "2020-12-28T16:29:36+00:00",
   "url": "/topics/assembly/tutorials/algorithms-introduction/slides.html",
   "topic_name": "assembly",
-  "tutorial_name": "algorithms-introduction",
-  "hands_on": false,
-  "slides": true,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//assembly/tutorials/algorithms-introduction/slides.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//assembly/tutorials/algorithms-introduction/slides.json"
-  }
+  "tutorial_name": "algorithms-introduction"
 }

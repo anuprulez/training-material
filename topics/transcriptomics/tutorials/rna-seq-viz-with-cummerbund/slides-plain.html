@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/slides-plain.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Visualization of RNA-Seq results with CummeRbund" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2022-11-22 11:37:37 +0000" />
+<meta name="DC.creator" content="Andrea Bagnacani" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="Training material for all kinds of transcriptomics analysis." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Visualization of RNA-Seq results with CummeRbund" />
         <meta property="og:description" content="Training material for all kinds of transcriptomics analysis." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -135,6 +146,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -177,7 +189,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/slides-plain.html" title="Version 2019-02-07">2019-02-07</a>
@@ -214,9 +225,17 @@
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/slides.html">View markdown source on GitHub</a>
 	<h1>Visualization of RNA-Seq results with CummeRbund</h1>
 		<h2>Contributors</h2>
-		
+<div markdown="0">
+
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/bagnacan/" class="contributor-badge contributor-bagnacan"><img src="https://avatars.githubusercontent.com/bagnacan?s=27" alt="Avatar">Andrea Bagnacani</a>
 
+
+
+	</div>
+
+</div>
 
 
 		
@@ -253,7 +272,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Oct 9, 2018 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Nov 22, 2022 </div>
 
 	<hr />
 
@@ -267,7 +286,7 @@ Data alone does not bring any information: to carry information, data needs to b
 
 <h3 id="where-is-my-data-coming-from">Where is my data coming from?</h3>
 
-<p><img src="../../images/cummerbund-rna-seq-experiment.jpg" alt="Wang et al, Nat Rev Genet, 2009. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-rna-seq-experiment.jpg" alt="Wang et al, Nat Rev Genet, 2009. " loading="lazy" /></p>
 
 <p><small><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/"><em>Wang et al, Nat Rev Genet, 2009</em></a></small></p>
 
@@ -308,7 +327,7 @@ Data alone does not bring any information: to carry information, data needs to b
 
 <h3 id="bioinformatic-tools-for-rna-seq-analysis-1">Bioinformatic tools for RNA-Seq analysis</h3>
 
-<p><img src="../../images/cummerbund-rna-seq-experiment-tuxedo.jpg" alt="Trapnell et al, Nat Protoc, 2012. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-rna-seq-experiment-tuxedo.jpg" alt="Trapnell et al, Nat Protoc, 2012. " loading="lazy" /></p>
 
 <p><small><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/"><em>Trapnell et al, Nat Protoc, 2012</em></a></small>
 <span>Speaker Notes</span></p>
@@ -328,11 +347,11 @@ Data alone does not bring any information: to carry information, data needs to b
 <ul>
   <li>
     <p>Gene expression levels are reported as <i>tab-separated</i> values: a simple tabular output that can be viewed with any spreadsheet application. Such files contain statistics, gene-related, and transcript-related attributes
-.image-75[<img src="../../images/cummerbund-cuffdiff-output.png" alt="CuffDiff output. " loading="lazy" />]</p>
+.image-75[<img src="../../images/transcriptomics_images/cummerbund-cuffdiff-output.png" alt="CuffDiff output. " loading="lazy" />]</p>
   </li>
   <li>
     <p>Another way to collect all these data is to organize it within a dedicated database for later consultation. CuffDiff can be instructed to do so
-.image-50[<img src="../../images/cummerbund-cuffdiff-set-sqlite.png" alt="CuffDiff output SQLite. " loading="lazy" />]</p>
+.image-50[<img src="../../images/transcriptomics_images/cummerbund-cuffdiff-set-sqlite.png" alt="CuffDiff output SQLite. " loading="lazy" />]</p>
   </li>
 </ul>
 
@@ -404,7 +423,7 @@ Data alone does not bring any information: to carry information, data needs to b
 
 <p>Once the most significant differentially expressed gene has been identified, CummeRbund can generate publication-ready plots to highlight…</p>
 
-<p>.image-50[<img src="../../images/cummerbund-expression-plot.png" alt="CummeRbund Expression plot. " loading="lazy" />]</p>
+<p>.image-50[<img src="../../images/transcriptomics_images/cummerbund-expression-plot.png" alt="CummeRbund Expression plot. " loading="lazy" />]</p>
 
 <p>The expression of all isoforms of the single gene with replicate FPKMs</p>
 
@@ -414,7 +433,7 @@ Data alone does not bring any information: to carry information, data needs to b
 
 <p>Once the most significant differentially expressed gene has been identified, CummeRbund can generate publication-ready plots to highlight…</p>
 
-<p>.image-50[<img src="../../images/cummerbund-expression-bar-plot.png" alt="CummeRbund Expression plot. " loading="lazy" />]</p>
+<p>.image-50[<img src="../../images/transcriptomics_images/cummerbund-expression-bar-plot.png" alt="CummeRbund Expression plot. " loading="lazy" />]</p>
 
 <p>The expression bar-plot of all isoforms of a gene with replicate FPKMs</p>
 
@@ -424,7 +443,7 @@ Data alone does not bring any information: to carry information, data needs to b
 
 <p>…and many more</p>
 
-<p>.image-50[<img src="../../images/cummerbund-other-plots.png" alt="Other CummeRbund plots. " loading="lazy" />]</p>
+<p>.image-50[<img src="../../images/transcriptomics_images/cummerbund-other-plots.png" alt="Other CummeRbund plots. " loading="lazy" />]</p>
 
 <p>Have a look at <a href="https://bioconductor.org/packages/2.11/bioc/vignettes/cummeRbund/inst/doc/cummeRbund-manual.pdf">CummerBund’s tutorial</a> to overview all possibilities!</p>
 
@@ -455,13 +474,13 @@ Data alone does not bring any information: to carry information, data needs to b
 This material is the result of a collaborative work. Thanks to the <a href="https://training.galaxyproject.org" aria-label="Visit the GTN">Galaxy Training Network</a> and all the contributors!
 
 
-
-
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
 
 This material is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </section>
+
+
 
 
 
@@ -475,46 +494,47 @@ This material is licensed under the <a rel="license" href="https://creativecommo
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
         <p>
-The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-</p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/68f00ee516f2ca82b6b6bfbcb9764c38928b20de">68f00ee516f2ca82b6b6bfbcb9764c38928b20de</a></p>
+        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
+        </p>
+
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/aafa18eae63372b4cdab8e74eea30b0a558109fb">aafa18eae63372b4cdab8e74eea30b0a558109fb</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

@@ -1,4 +1,30 @@
 @charset "UTF-8";
+.color-overview { background: #8A9AD0; }
+
+.color-agenda { background: #86D486; }
+
+.color-keypoints { background: #FFA1A1; }
+
+.color-tip { background: #FFE19E; }
+
+.color-warning { background: #de8875; }
+
+.color-comment { background: #ffecc1; }
+
+.color-handson { background: #dfe5f9; }
+
+.color-question { background: #8A9AD0; }
+
+.color-solution { background: #B8C3EA; }
+
+.color-details { background: #ddd; }
+
+.color-feedback { background: #86D486; }
+
+.color-code { background: #86D486; }
+
+.color-code-out { background: #fb99d0; }
+
 body { font-size: 15px; word-wrap: break-word; position: relative; }
 
 /*! Dark; http://bytefluent.com/devify/ */
@@ -710,11 +736,11 @@ footer { margin-top: 3em; text-align: center; color: #555; font-size: 13px; }
 
 .navbar .navbar-collapse { justify-content: flex-end; align-items: flex-end; min-width: 0; }
 
-nav input.nicer { background: transparent; color: black; border: none; border-bottom: 2px solid black; border-radius: 0px; padding: 0.4em 0 0 0; }
+nav input.nicer { background: transparent; color: white; border: none; border-bottom: 2px solid white; border-radius: 0px; padding: 0.4em 0 0 0; }
 
-nav input.nicer::placeholder { color: black; }
+nav input.nicer::placeholder { color: white; }
 
-nav input.nicer:focus, nav input.nicer:active { color: black; background: #fff2; border-bottom: 2px solid black; text-decoration: underline; }
+nav input.nicer:focus, nav input.nicer:active { color: white; background: #fff2; border-bottom: 2px solid white; text-decoration: underline; }
 
 #search-container input.nicer { background: transparent; color: black; border: none; border-bottom: 2px solid black; border-radius: 0px; padding: 0.4em 0 0 0; }
 
@@ -740,11 +766,11 @@ nav input.nicer:focus, nav input.nicer:active { color: black; background: #fff2;
 
 .tutorial > h1:first-child { margin-bottom: 1rem; }
 
-.tutorial table { display: block; width: 100%; overflow-x: auto; max-width: 100%; margin-bottom: 1rem; }
+.tutorial table:not(.contributions) { display: block; width: 100%; overflow-x: auto; max-width: 100%; margin-bottom: 1rem; }
 
-.tutorial table th, .tutorial table td { padding: .75rem; vertical-align: top; border-top: 1px solid #eceeef; }
+.tutorial table:not(.contributions) th, .tutorial table:not(.contributions) td { padding: .75rem; vertical-align: top; border-top: 1px solid #eceeef; }
 
-.tutorial table thead th { vertical-align: bottom; border-bottom: 2px solid #eceeef; }
+.tutorial table:not(.contributions) thead th { vertical-align: bottom; border-bottom: 2px solid #eceeef; }
 
 .tutorial div.container blockquote ul, .tutorial div.container blockquote p, .tutorial div.container blockquote li > p:last-child { margin-bottom: 0.5rem; }
 
@@ -756,79 +782,103 @@ blockquote ul, blockquote ol, blockquote > blockquote, blockquote li p { margin-
 
 blockquote img { display: block; }
 
-blockquote.agenda { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
+blockquote.agenda { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
 
-blockquote.agenda > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.agenda > h3, blockquote.agenda > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.agenda > h3 .fa { padding-right: 0.2rem; }
+blockquote.agenda > h3 .fa, blockquote.agenda > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.tip { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #FFE19E; box-shadow: 3px 3px #FFE19E; }
+blockquote.agenda > h3 button, blockquote.agenda > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.tip > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #FFE19E; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.tip { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #FFE19E; box-shadow: 3px 3px #FFE19E; }
 
-blockquote.tip > h3 .fa { padding-right: 0.2rem; }
+blockquote.tip > h3, blockquote.tip > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #FFE19E; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.question { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #8A9AD0; box-shadow: 3px 3px #8A9AD0; }
+blockquote.tip > h3 .fa, blockquote.tip > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.question > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #8A9AD0; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.tip > h3 button, blockquote.tip > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.question > h3 .fa { padding-right: 0.2rem; }
+blockquote.question { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #8A9AD0; box-shadow: 3px 3px #8A9AD0; }
 
-blockquote.code-in { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
+blockquote.question > h3, blockquote.question > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #8A9AD0; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.code-in > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.question > h3 .fa, blockquote.question > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.code-in > h3 .fa { padding-right: 0.2rem; }
+blockquote.question > h3 button, blockquote.question > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.code-out { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #fb99d0; box-shadow: 3px 3px #fb99d0; }
+blockquote.code-in { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
 
-blockquote.code-out > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #fb99d0; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.code-in > h3, blockquote.code-in > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.code-out > h3 .fa { padding-right: 0.2rem; }
+blockquote.code-in > h3 .fa, blockquote.code-in > .box-title .fa { padding-right: 0.2rem; }
+
+blockquote.code-in > h3 button, blockquote.code-in > .box-title button { background: transparent; border: none; cursor: pointer; }
+
+blockquote.code-out { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #fb99d0; box-shadow: 3px 3px #fb99d0; }
+
+blockquote.code-out > h3, blockquote.code-out > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #fb99d0; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+
+blockquote.code-out > h3 .fa, blockquote.code-out > .box-title .fa { padding-right: 0.2rem; }
+
+blockquote.code-out > h3 button, blockquote.code-out > .box-title button { background: transparent; border: none; cursor: pointer; }
 
 blockquote.code-max-300 pre { max-height: 300px; }
 
-blockquote.solution { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #B8C3EA; box-shadow: 3px 3px #B8C3EA; }
+blockquote.solution { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #B8C3EA; box-shadow: 3px 3px #B8C3EA; }
 
-blockquote.solution > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #B8C3EA; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.solution > h3, blockquote.solution > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #B8C3EA; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.solution > h3 .fa { padding-right: 0.2rem; }
+blockquote.solution > h3 .fa, blockquote.solution > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.comment { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #ffecc1; box-shadow: 3px 3px #ffecc1; }
+blockquote.solution > h3 button, blockquote.solution > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.comment > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #ffecc1; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.comment { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #ffecc1; box-shadow: 3px 3px #ffecc1; }
 
-blockquote.comment > h3 .fa { padding-right: 0.2rem; }
+blockquote.comment > h3, blockquote.comment > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #ffecc1; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.hands_on { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #dfe5f9; box-shadow: 3px 3px #dfe5f9; }
+blockquote.comment > h3 .fa, blockquote.comment > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.hands_on > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #dfe5f9; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.comment > h3 button, blockquote.comment > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.hands_on > h3 .fa { padding-right: 0.2rem; }
+blockquote.hands_on, blockquote.hands-on { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #dfe5f9; box-shadow: 3px 3px #dfe5f9; }
 
-blockquote.key_points { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #FFA1A1; box-shadow: 3px 3px #FFA1A1; }
+blockquote.hands_on > h3, blockquote.hands_on > .box-title, blockquote.hands-on > h3, blockquote.hands-on > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #dfe5f9; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.key_points > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #FFA1A1; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.hands_on > h3 .fa, blockquote.hands_on > .box-title .fa, blockquote.hands-on > h3 .fa, blockquote.hands-on > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.key_points > h3 .fa { padding-right: 0.2rem; }
+blockquote.hands_on > h3 button, blockquote.hands_on > .box-title button, blockquote.hands-on > h3 button, blockquote.hands-on > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.overview { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #8A9AD0; box-shadow: 3px 3px #8A9AD0; margin-top: 5rem; }
+blockquote.key_points { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #FFA1A1; box-shadow: 3px 3px #FFA1A1; }
 
-blockquote.overview > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #8A9AD0; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.key_points > h3, blockquote.key_points > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #FFA1A1; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.overview > h3 .fa { padding-right: 0.2rem; }
+blockquote.key_points > h3 .fa, blockquote.key_points > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.warning { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #de8875; box-shadow: 3px 3px #de8875; }
+blockquote.key_points > h3 button, blockquote.key_points > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.warning > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #de8875; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.overview { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #8A9AD0; box-shadow: 3px 3px #8A9AD0; margin-top: 5rem; }
 
-blockquote.warning > h3 .fa { padding-right: 0.2rem; }
+blockquote.overview > h3, blockquote.overview > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #8A9AD0; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.details { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #ddd; box-shadow: 3px 3px #ddd; }
+blockquote.overview > h3 .fa, blockquote.overview > .box-title .fa { padding-right: 0.2rem; }
 
-blockquote.details > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #ddd; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.overview > h3 button, blockquote.overview > .box-title button { background: transparent; border: none; cursor: pointer; }
 
-blockquote.details > h3 .fa { padding-right: 0.2rem; }
+blockquote.warning { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #de8875; box-shadow: 3px 3px #de8875; }
+
+blockquote.warning > h3, blockquote.warning > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #de8875; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+
+blockquote.warning > h3 .fa, blockquote.warning > .box-title .fa { padding-right: 0.2rem; }
+
+blockquote.warning > h3 button, blockquote.warning > .box-title button { background: transparent; border: none; cursor: pointer; }
+
+blockquote.details { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #ddd; box-shadow: 3px 3px #ddd; }
+
+blockquote.details > h3, blockquote.details > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #ddd; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+
+blockquote.details > h3 .fa, blockquote.details > .box-title .fa { padding-right: 0.2rem; }
+
+blockquote.details > h3 button, blockquote.details > .box-title button { background: transparent; border: none; cursor: pointer; }
 
 blockquote.quote { border-left: 5px solid #eee; padding-left: 1em; }
 
@@ -844,11 +894,13 @@ blockquote.matrix table td:first-child, blockquote.matrix table th:first-child {
 
 blockquote.matrix table td:not(first-child), blockquote.matrix table th:not(first-child) { text-align: center; border-right: 1px solid #ddd; border-left: 1px solid #ddd; }
 
-blockquote.feedback { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
+blockquote.feedback { margin-top: 4rem; padding: 0.6rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
 
-blockquote.feedback > h3 { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+blockquote.feedback > h3, blockquote.feedback > .box-title { font-size: 18px; margin-left: -1rem; margin-right: -1rem; margin-top: -3.30rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; background-color: #86D486; color: #292b2c; vertical-align: 1em; float: left; border: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
-blockquote.feedback > h3 .fa { padding-right: 0.2rem; }
+blockquote.feedback > h3 .fa, blockquote.feedback > .box-title .fa { padding-right: 0.2rem; }
+
+blockquote.feedback > h3 button, blockquote.feedback > .box-title button { background: transparent; border: none; cursor: pointer; }
 
 .fold-unfold { margin-left: 1rem; }
 
@@ -960,13 +1012,15 @@ nav[data-toggle='toc'] .nav-link.active:hover { padding-left: 0px; color: #00459
 
 .contributors-line { color: #555; font-size: 1.2em; display: flex; flex-wrap: wrap; align-content: baseline; line-height: 1.5em; }
 
-.contributors-line .contributor-badge img { height: 1.5em; }
+.contributors-line .contributor-badge img { height: 1.5em; line-height: 1.5em; }
 
-.contributors-line .contributor-badge i { margin-left: 0.5em; margin-right: 0.5em; }
+.contributors-line .contributor-badge i { height: 1.5em; line-height: 1.5em; margin-left: 0.5em; margin-right: 0.5em; }
 
-.contributor-badge { /* prevent breaking across lines */ white-space: nowrap; display: inline-flex; flex-direction: row; align-items: center; border-radius: 1em; border: 1px solid #b7daff; padding-right: 0.5em; margin: 0.2em; line-height: 1em; }
+.contributor-badge { /* prevent breaking across lines */ white-space: nowrap; display: inline-flex; flex-direction: row; align-items: center; border-radius: 1em; border: 1px solid #b7daff; padding-right: 0.5em; margin: 0.2em; line-height: 1em; flex-shrink: 0; }
 
 .contributor-badge img { height: 1em; border-radius: 50%; margin: 0 0.25em 0 0; }
+
+table.contributions tr td:nth-child(1) { display: flex; flex-wrap: wrap; }
 
 div.highlight { position: relative; }
 
@@ -1030,6 +1084,12 @@ abbr { text-decoration: underline dotted; cursor: help; font-variant: none; }
 
 .fdbk .accordion .accordion-card .mb-0 { margin-top: 0px; }
 
+div.contributors-line dl { display: flex; flex-wrap: wrap; margin-bottom: 0; }
+
+div.contributors-line dt { width: 8em; text-align: right; font-weight: initial; }
+
+div.contributors-line dd { margin-left: auto; width: calc(100% - 9em); display: flex; }
+
 a.btn { display: inline-flex; align-items: center; white-space: normal; }
 
 a.btn div { width: 100%; font-size: 1rem; }
@@ -1055,5 +1115,39 @@ a.btn div { width: 100%; font-size: 1rem; }
 .btn-square-large { width: 150px !important; max-width: 100% !important; max-height: 100% !important; height: 150px !important; text-align: center; padding: 5px; font-size: 1.25rem; margin: 5px; }
 
 .btn-square-extralarge { width: 200px !important; max-width: 100% !important; max-height: 100% !important; height: 200px !important; text-align: center; padding: 5px; font-size: 1.5rem; margin: 5px; }
+
+/* CYOA */
+.gtn-cyoa input[type="radio"] { display: none; }
+
+.gtn-cyoa input[type="radio"]:checked + label { background-color: #8A9AD0; }
+
+.gtn-cyoa .btn-secondary { color: #292b2c; background-color: #dfe5f9; border-color: transparent; }
+
+.gtn-cyoa .btn-secondary:hover { background-color: #B8C3EA; }
+
+.gtn-cyoa label { padding: 1em; display: inline-block; }
+
+.gtn-cyoa-hidden { height: 0px; visibility: hidden; display: none; padding: 0rem; }
+
+/* Maybe something like this for the case where they do not select anything? .openstack { border-left: 2px solid red; } .digitalocean { border-left: 2px solid blue; } */
+ul.text-list, ol.text-list { list-style: none; padding-left: 0; }
+
+ul.text-list li, ol.text-list li { display: inline; }
+
+.gtn-card { border-radius: 10px; }
+
+.gtn-card .card-title { font-size: 500%; font-weight: 900; margin-bottom: 0; text-align: center; }
+
+.gtn-card .card-text { text-align: center; font-size: 150%; padding: 0.3em; }
+
+.dropdown-item:focus-visible { outline: red 3px solid; }
+
+a[target="_blank"]::after { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==) " (opens in new tab)"; display: inline-block; margin-left: 0.2em; height: 1em; }
+
+.tutorials-list { /* Big */ /* Skinny */ }
+
+@media (min-width: 768px) { .tutorials-list .duplicate { display: none; } }
+
+@media (max-width: 767px) { .tutorials-list table.table.table-responsive { display: inline-table; } .tutorials-list tr th:not(:first-child) { display: none; } .tutorials-list tr td:not(:first-child) { display: none; } .tutorials-list r .duplicate { display: unset; } }
 
 /*# sourceMappingURL=main.css.map */

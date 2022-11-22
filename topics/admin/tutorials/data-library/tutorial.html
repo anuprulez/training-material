@@ -17,6 +17,16 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Data Libraries" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2022-11-09 11:03:19 +0000" />
+<meta name="DC.creator" content="Helena Rasche" />
+<meta name="DC.creator" content="Saskia Hiltemann" />
 
         
         
@@ -24,9 +34,11 @@
         
         
         <meta name="description" content="Resources related to configuration and maintenance of Gal..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Data Libraries" />
         <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -134,10 +146,14 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
         
 
         <div class="dropdown-item">
@@ -176,7 +192,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/topics/admin/tutorials/data-library/tutorial.html" title="Version 2019-02-07">2019-02-07</a>
@@ -239,27 +254,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -272,7 +274,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:42 +0000",
+  "dateModified": "2022-11-09 11:03:19 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Data Libraries",
   "interactivityType": "mixed",
@@ -297,28 +299,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Galaxy Server administration",
     "description": "Resources related to configuration and maintenance of Galaxy servers",
-    "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+    "url": "https://training.galaxyproject.org/training-material/topics/admin/"
   },
-  "courseCode": "admin / data-library / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Data Libraries' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/data-library/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html",
   "timeRequired": "PT30M",
-  "keywords": "ansible, storage, git-gat",
-  "description": "The questions this  addresses are:\n - How do data libraries work?\n - What are they good for?\n - How can I use them?\n - How can I setup permissions for them?\n\n\\nThe objectives are:\n - Setup a data library\n - Manage permissions\n - Import data from disk\n\n",
+  "keywords": "admin, ansible, storage, git-gat",
+  "description": "The questions this  addresses are:\n - How do data libraries work?\n - What are they good for?\n - How can I use them?\n - How can I setup permissions for them?\n\n\nThe objectives are:\n - Setup a data library\n - Manage permissions\n - Import data from disk\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible/slides.html",
       "name": "Ansible",
       "description": "Slides for 'Ansible' tutorial",
       "learningResourceType": "slides",
@@ -331,8 +351,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible/tutorial.html",
       "name": "Ansible",
       "description": "Hands-on for 'Ansible' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -345,22 +366,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible/slides.html",
-      "name": "Ansible",
-      "description": "Slides for 'Ansible' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
       "name": "Galaxy Installation with Ansible",
       "description": "Slides for 'Galaxy Installation with Ansible' tutorial",
       "learningResourceType": "slides",
@@ -373,8 +381,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html",
       "name": "Galaxy Installation with Ansible",
       "description": "Hands-on for 'Galaxy Installation with Ansible' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -387,22 +396,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/ansible-galaxy/slides.html",
-      "name": "Galaxy Installation with Ansible",
-      "description": "Slides for 'Galaxy Installation with Ansible' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/tool-management/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/slides.html",
       "name": "Galaxy Tool Management with Ephemeris",
       "description": "Slides for 'Galaxy Tool Management with Ephemeris' tutorial",
       "learningResourceType": "slides",
@@ -415,8 +411,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/tool-management/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html",
       "name": "Galaxy Tool Management with Ephemeris",
       "description": "Hands-on for 'Galaxy Tool Management with Ephemeris' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -427,43 +424,102 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/tool-management/slides.html",
-      "name": "Galaxy Tool Management with Ephemeris",
-      "description": "Slides for 'Galaxy Tool Management with Ephemeris' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
     }
-  ],
-  "hasPart": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     }
   ],
   "about": [
@@ -471,7 +527,7 @@
       "@type": "CreativeWork",
       "name": "Galaxy Server administration",
       "description": "Resources related to configuration and maintenance of Galaxy servers",
-      "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+      "url": "https://training.galaxyproject.org/training-material/topics/admin/"
     }
   ]
 }
@@ -481,21 +537,25 @@
     <h1 data-toc-skip>Data Libraries</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
-<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+	<div class="contributors-line">
+		Authors: 
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 
 
-<a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
+
+<a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -637,7 +697,21 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -732,7 +806,15 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -827,6 +909,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -887,10 +971,12 @@
 
 
 
+
+
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -908,6 +994,7 @@
         
         
         
+        
     </ul>
    </li>
    
@@ -918,7 +1005,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 17, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 9, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -944,7 +1031,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 <p><img src="/training-material/topics/admin/images/data/data-library-screenshot.png" alt="screenshot of data libraries. " loading="lazy" /></p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
 
 <ol id="markdown-toc">
   <li><a href="#setup" id="markdown-toc-setup">Setup</a></li>
@@ -961,12 +1048,15 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 
 </blockquote>
 
+<!--SNIPPET-->
+<blockquote class="comment">  <div id="comment-galaxy-admin-training-path" class="box-title" aria-label="comment box: Galaxy Admin Training Path"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: <span class="notranslate">Galaxy</span> Admin Training Path</div>  <p>The yearly <span class="notranslate">Galaxy</span> Admin Training follows a specific ordering of tutorials. Use this timeline to help keep track of where you are in <span class="notranslate">Galaxy</span> Admin Training.</p>  <ol id="git-gat-timeline">    <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html">    <li class="disabled">        <span>Step 1</span>        <span>ansible-<span class="notranslate">galaxy</span></span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/tus/tutorial.html">    <li class="disabled">        <span>Step 2</span>        <span>tus</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/cvmfs/tutorial.html">    <li class="disabled">        <span>Step 3</span>        <span>cvmfs</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/singularity/tutorial.html">    <li class="disabled">        <span>Step 4</span>        <span>singularity</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/tool-management/tutorial.html">    <li class="disabled">        <span>Step 5</span>        <span>tool-management</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/data-library/tutorial.html">    <li class="active">        <span>Step 6</span>        <span>data-library</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html">    <li class="">        <span>Step 7</span>        <span>connect-to-compute-cluster</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/job-destinations/tutorial.html">    <li class="">        <span>Step 8</span>        <span>job-destinations</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/pulsar/tutorial.html">    <li class="">        <span>Step 9</span>        <span>pulsar</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/gxadmin/tutorial.html">    <li class="">        <span>Step 10</span>        <span>gxadmin</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/monitoring/tutorial.html">    <li class="">        <span>Step 11</span>        <span>monitoring</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/tiaas/tutorial.html">    <li class="">        <span>Step 12</span>        <span>tiaas</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/reports/tutorial.html">    <li class="">        <span>Step 13</span>        <span>reports</span>    </li>        </a>        <span aria-hidden="true">        <i class="fas fa-arrow-right" aria-hidden="true"></i>    </span>        <a href="/training-material/topics/admin/tutorials/ftp/tutorial.html">    <li class="">        <span>Step 14</span>        <span>ftp</span>    </li>        </a>    </ol>  <style type="text/css">#git-gat-timeline {    display: flex;    flex-direction: row;    flex-wrap: wrap;}#git-gat-timeline li  {    display: flex;    flex-direction: column;    border: 1px solid black;    border-radius: 5px;    padding: 0.5em;    margin: 0.5em;}#git-gat-timeline li.active {    background: #86d486;    color: black;}#git-gat-timeline li.disabled {    background: #eee;}#git-gat-timeline span {    align-self: center;}</style></blockquote>
+
 <h1 id="setup">Setup</h1>
 
 <p>Before we can import local data, we need to configure <span class="notranslate">Galaxy</span> to permit this. Additionally we will setup an example data library which we can use for demonstrative purposes.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-setting-up-data-libraries"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Setting up Data Libraries</h3>
+  <div id="hands-on-setting-up-data-libraries" class="box-title" aria-label="hands-on box: Setting up Data Libraries"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Setting up Data Libraries</div>
 
   <ol>
     <li>
@@ -983,9 +1073,12 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 +        dest: /libraries/
 </span>   roles:
      - <span class="notranslate">galaxy</span>project.postgresql
-     - role: natefoo.postgresql_objects
+     - role: <span class="notranslate">galaxy</span>project.postgresql_objects
    
 </code></pre></div>      </div>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <div id="tip-how-to-read-a-diff" class="box-title"><button type="button" aria-controls="tip-how-to-read-a-diff-contents" aria-expanded="true" aria-label="Toggle tip box: How to read a Diff"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to read a Diff<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>If you haven’t worked with diffs before, this can be something quite new or different.</p>  <p>If we have two files, let’s say a grocery list, in two files. We’ll call them ‘a’ and ‘b’.</p>  <blockquote class="code-2col">  <blockquote class="code-in">    <code-in-title>Old</code-in-title>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat old<br />🍎<br />🍐<br />🍊<br />🍋<br />🍒<br />🥑<br /></code></pre></div>    </div>  </blockquote>  <blockquote class="code-out">    <code-out-title>New</code-out-title>    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat new<br />🍎<br />🍐<br />🍊<br />🍋<br />🍍<br />🥑<br /></code></pre></div>    </div>  </blockquote></blockquote>  <p>We can see that they have some different entries. We’ve removed 🍒 because they’re awful, and replaced them with an 🍍</p>  <p>Diff lets us compare these files</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new<br />5c5<br />&lt; 🍒<br /><span class="nt">---</span><br /><span class="o">&gt;</span> 🍍<br /></code></pre></div></div>  <p>Here we see that 🍒 is only in a, and 🍍 is only in b. But otherwise the files are identical.</p>  <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new<br /><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:06:36.340962616 +0100<br />@@ <span class="nt">-3</span>,4 +3,4 @@<br /> 🍊<br /> 🍋<br />-🍒<br />+🍍<br /> 🥑<br /></code></pre></div></div>  <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>  <ul>  <li><code class="language-plaintext highlighter-rouge">--- old</code> is the ‘old’ file in our view</li>  <li><code class="language-plaintext highlighter-rouge">+++ new</code> is the ‘new’ file</li>  <li>@@ these lines tell us where the change occurs and how many lines are added or removed.</li>  <li>Lines starting with a - are removed from our ‘new’ file</li>  <li>Lines with a + have been added.</li></ul>  <p>So when you go to apply these diffs to your files in the training:</p>  <ol>  <li>Ignore the header</li>  <li>Remove lines starting with - from your file</li>  <li>Add lines starting with + to your file</li></ol>  <p>The other lines (🍊/🍋 and 🥑) above just provide “context”, they help you know where a change belongs in a file, but <strong>should not be edited</strong> when you’re making the above change. Given the above diff, you would find a line with a 🍒, and replace it with a 🍍</p>  <h4 id="added--removed-lines">Added &amp; Removed Lines</h4>  <p>Removals are very easy to spot, we just have removed lines</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:10:14.370722802 +0100<br />@@ <span class="nt">-4</span>,3 +4,2 @@<br /> 🍋<br /> 🍒<br />-🥑<br /></code></pre></div></div>  <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ new	2022-02-16 14:11:11.422135393 +0100<br />@@ <span class="nt">-1</span>,3 +1,4 @@<br /> 🍎<br />+🍍<br /> 🍐<br /> 🍊<br /></code></pre></div></div>  <h4 id="completely-new-files">Completely new files</h4>  <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old<br /><span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100<br />+++ old	2022-02-16 14:06:19.697132568 +0100<br />@@ <span class="nt">-0</span>,0 +1,6 @@<br />+🍎<br />+🍐<br />+🍊<br />+🍋<br />+🍒<br />+🥑<br /></code></pre></div></div>  <p>And removed files are similar, except with the new file being /dev/null</p>  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100<br />+++ /dev/null	2022-02-15 11:47:16.100000270 +0100<br />@@ <span class="nt">-1</span>,6 +0,0 @@<br />-🍎<br />-🍐<br />-🍊<br />-🍋<br />-🍒<br />-🥑<br /></code></pre></div></div></blockquote>
     </li>
     <li>
       <p>Take a minute to explore the <a href="https://github.com/usegalaxy-eu/libraries-training-repo">folders in our sample library.</a>. These will be important when we start loading data.</p>
@@ -1001,9 +1094,9 @@ of a sequencing run or similar project to a group of users on the servers.</p>
    <span class="notranslate">galaxy</span>:
 <span class="gi">+    library_import_dir: /libraries/admin
 +    user_library_import_dir: /libraries/user
-</span>     tool_data_table_config_path: /cvmfs/data.<span class="notranslate">galaxy</span>project.org/byhand/location/tool_data_table_conf.xml,/cvmfs/data.<span class="notranslate">galaxy</span>project.org/managed/location/tool_data_table_conf.xml
-     dependency_resolvers_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/dependency_resolvers_conf.xml"
+</span>     dependency_resolvers_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/dependency_resolvers_conf.xml"
      containers_resolvers_config_file: "{{ <span class="notranslate">galaxy</span>_config_dir }}/container_resolvers_conf.xml"
+     tool_data_table_config_path: /cvmfs/data.<span class="notranslate">galaxy</span>project.org/byhand/location/tool_data_table_conf.xml,/cvmfs/data.<span class="notranslate">galaxy</span>project.org/managed/location/tool_data_table_conf.xml
    
 </code></pre></div>      </div>
 
@@ -1013,7 +1106,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
       <p>Run the playbook:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <div id="code-in-bash" class="box-title" aria-label="code-in box: Bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: Bash</div>
         <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ansible-playbook <span class="notranslate">galaxy</span>.yml
 </code></pre></div>        </div>
       </blockquote>
@@ -1028,13 +1121,13 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 
 <blockquote class="code-2col">
   <blockquote class="code-in">
-    <h3 id="code-in-input-bash-1"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+    <div id="code-in-bash-1" class="box-title" aria-label="code-in box: Bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: Bash</div>
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tree /libraries
 </code></pre></div>    </div>
   </blockquote>
 
   <blockquote class="code-out">
-    <h3 id="code-out-output-bash"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> Output: Bash</h3>
+    <div id="code-out-bash" class="box-title" aria-label="code-out box: Bash"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden"></span> Output: Bash</div>
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/libraries/
 ├── admin
 │   └── admin-wildtype.fna
@@ -1052,7 +1145,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 </blockquote>
 
 <blockquote class="tip">
-  <h3 id="tip-tip-adminexampleorg"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: admin@example.org</h3>
+  <div id="tip-admin-example-org" class="box-title"><button type="button" aria-controls="tip-admin-example-org-contents" aria-expanded="true" aria-label="Toggle tip box: admin@example.org"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: admin@example.org<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>Note that in the user directories, admin@example.com and example.org are used, if you’ve used a different email address for <em>your</em> admin user, you’ll need to copy one of these directories.</p>
 </blockquote>
 
@@ -1084,7 +1177,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 <p>This will enable the option for everyone, any unprivileged user with a folder in the <code class="language-plaintext highlighter-rouge">user_library_import_dir</code> directory <em>and</em> permissions on a data library can import things from their import directory.</p>
 
 <blockquote class="tip">
-  <h3 id="tip-tip-do-you-not-see-a-directory-here"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Do you not see a directory here?</h3>
+  <div id="tip-do-you-not-see-a-directory-here" class="box-title"><button type="button" aria-controls="tip-do-you-not-see-a-directory-here-contents" aria-expanded="true" aria-label="Toggle tip box: Do you not see a directory here?"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Do you not see a directory here?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>We pre-created a directory for someone registered as <code class="language-plaintext highlighter-rouge">admin@example.org</code>, but if you are logged in with an account registered with a different email, you’ll see nothing.</p>
 
   <p>You can fix this by going into /libraries/user and <code class="language-plaintext highlighter-rouge">cp -Rv admin@example.org whatever-email-you-used</code>
@@ -1105,13 +1198,13 @@ Then it should appear in <span class="notranslate">Galaxy</span>.</p>
 We’ve included this file in the example data libraries repository we cloned at the beginning:</p>
 
 <blockquote class="code-in">
-  <h3 id="code-in-input-bash-2"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+  <div id="code-in-bash-2" class="box-title" aria-label="code-in box: Bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: Bash</div>
   <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> /libraries/example-library.yaml
 </code></pre></div>  </div>
 </blockquote>
 
 <blockquote class="code-out">
-  <h3 id="code-out-output-bash-1"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> Output: Bash</h3>
+  <div id="code-out-bash-1" class="box-title" aria-label="code-out box: Bash"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden"></span> Output: Bash</div>
   <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">destination</span><span class="pi">:</span>
   <span class="na">type</span><span class="pi">:</span> <span class="s">library</span>
@@ -1140,23 +1233,23 @@ We’ve included this file in the example data libraries repository we cloned at
 <p>Let’s try setting that up in our <span class="notranslate">Galaxy</span>!</p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-getting-your-api-key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Getting your API key</h3>  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>  <ol>  <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>  <li>Log in, or register a new account, if it’s the first time you’re logging in</li>  <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>  <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>  <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li></ol></blockquote>
+<blockquote class="tip">  <div id="tip-getting-your-api-key" class="box-title"><button type="button" aria-controls="tip-getting-your-api-key-contents" aria-expanded="true" aria-label="Toggle tip box: Getting your API key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Getting your API key<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>  <ol>  <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>  <li>Log in, or register a new account, if it’s the first time you’re logging in</li>  <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>  <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>  <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li></ol></blockquote>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-importing-data-library-yaml"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> hands-on: importing data library yaml.</h3>
+  <div id="hands-on-hands-on-importing-data-library-yaml" class="box-title" aria-label="hands-on box: hands-on: importing data library yaml."><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: hands-on: importing data library yaml.</div>
 
   <ol>
     <li>
       <p>re-activate the virtualenv you created for the <a href="/training-material/topics/admin/tutorials/tool-management/tutorial.html">ephemeris tool management tutorial</a>.</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-3"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> input: bash</h3>
+        <div id="code-in-input-bash" class="box-title" aria-label="code-in box: input: bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: input: bash</div>
         <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>. ~/ephemeris_venv/bin/activate
 </code></pre></div>        </div>
       </blockquote>
 
       <blockquote class="tip">
-        <h3 id="tip-missing"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> missing?</h3>
+        <div id="tip-missing" class="box-title"><button type="button" aria-controls="tip-missing-contents" aria-expanded="true" aria-label="Toggle tip box: missing?"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: missing?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <p>then you might need to re-run the steps:</p>
 
@@ -1170,13 +1263,13 @@ pip <span class="nb">install </span>ephemeris
       <p>we’ll use the <code class="language-plaintext highlighter-rouge">setup-data-libraries</code> command to install the data in this yaml file into a library in our <span class="notranslate">galaxy</span>.</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-4"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> input: bash</h3>
+        <div id="code-in-input-bash-1" class="box-title" aria-label="code-in box: input: bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden"></span> Input: input: bash</div>
         <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>setup-data-libraries <span class="nt">-g</span> https://your-<span class="notranslate">galaxy</span> <span class="nt">-a</span> &lt;api-key&gt; <span class="nt">--training</span> <span class="nt">-i</span> /libraries/example-library.yaml <span class="nt">--legacy</span>
 </code></pre></div>        </div>
       </blockquote>
 
       <blockquote class="code-out">
-        <h3 id="code-out-output"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">code-out</span> output</h3>
+        <div id="code-out-output" class="box-title" aria-label="code-out box: output"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden"></span> Output: output</div>
         <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library name: mouse sequencing project
 </code></pre></div>        </div>
       </blockquote>
@@ -1202,7 +1295,7 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
 </blockquote>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-6">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-5...step-6#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <div id="comment-got-lost-along-the-way" class="box-title" aria-label="comment box: Got lost along the way?"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Got lost along the way?</div>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-6">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-5...step-6#files_bucket">the previous tutorial</a>.</p>  <p>If you’re using <code class="language-plaintext highlighter-rouge">git</code> to track your progress, remember to add your changes and commit with a good commit message!</p></blockquote>
 
 <p>Note that we’ve used some special flags here, <code class="language-plaintext highlighter-rouge">--training</code> and <code class="language-plaintext highlighter-rouge">--legacy</code>. Training sets some defaults that make sense for the GTN (mostly around library descriptions / etc.)</p>
 
@@ -1237,7 +1330,7 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>Data libraries are a great way to share data with groups of users</p>
@@ -1256,10 +1349,13 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
 
                 
 
+
+                
+
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -1291,12 +1387,11 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
                     })(window, document);
                 </script>
 
-
-
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Helena Rasche, Saskia Hiltemann, 2022 <b>Data Libraries (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Helena Rasche, Saskia Hiltemann,  <b>Data Libraries (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1304,18 +1399,26 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
 <code id="citation-code">@misc{admin-data-library,
 author = "Helena Rasche and Saskia Hiltemann",
 title = "Data Libraries (Galaxy Training Materials)",
-year = "2022",
-month = "03",
-day = "17"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1332,9 +1435,11 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">
@@ -1344,7 +1449,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 
@@ -1360,39 +1465,39 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

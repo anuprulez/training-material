@@ -31,33 +31,23 @@
     <meta property="og:title" content="Galaxy Training: Whole transcriptome analysis of Arabidopsis thaliana" />
     <meta property="og:description" content="Training material for all kinds of transcriptomics analysis." />
     <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
+    <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/mirna-target-finder/slides.html" />
+
     <script type="application/ld+json">
       
 
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -70,7 +60,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "2022-11-17 11:37:55 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Whole transcriptome analysis of Arabidopsis thaliana",
   "interactivityType": "mixed",
@@ -95,26 +85,45 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Transcriptomics",
     "description": "Training material for all kinds of transcriptomics analysis.",
-    "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/"
+    "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/"
   },
-  "courseCode": "transcriptomics / mirna-target-finder / slides",
   "learningResourceType": "slides",
   "name": "Slides for 'Whole transcriptome analysis of Arabidopsis thaliana' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/tutorials/mirna-target-finder/slides.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/mirna-target-finder/slides.html",
+  "keywords": "transcriptomics",
   "description": "",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -125,8 +134,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
       "name": "Quality Control",
       "description": "Slides for 'Quality Control' tutorial",
       "learningResourceType": "slides",
@@ -139,8 +149,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
       "name": "Quality Control",
       "description": "Hands-on for 'Quality Control' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -153,22 +164,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
-      "name": "Quality Control",
-      "description": "Slides for 'Quality Control' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
       "name": "Mapping",
       "description": "Slides for 'Mapping' tutorial",
       "learningResourceType": "slides",
@@ -181,8 +179,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
       "name": "Mapping",
       "description": "Hands-on for 'Mapping' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -193,43 +192,94 @@
         "name": "Galaxy Training Network",
         "url": "https://galaxyproject.org/teach/gtn/"
       }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
-      "name": "Mapping",
-      "description": "Slides for 'Mapping' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
     }
-  ],
-  "hasPart": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pavankumar Videm"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "name": "Pavankumar Videm",
+      "image": "https://avatars.githubusercontent.com/pavanvidem",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Cristóbal Gallardo"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
+      "name": "Cristóbal Gallardo",
+      "image": "https://avatars.githubusercontent.com/gallardoalba",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Pavankumar Videm"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
+      "name": "Pavankumar Videm",
+      "image": "https://avatars.githubusercontent.com/pavanvidem",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -237,7 +287,7 @@
       "@type": "CreativeWork",
       "name": "Transcriptomics",
       "description": "Training material for all kinds of transcriptomics analysis.",
-      "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/"
+      "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/"
     },
     {
       "@type": "DefinedTerm",
@@ -280,26 +330,43 @@ class: center, middle, inverse
 # Whole transcriptome analysis of Arabidopsis thaliana
 
 
-<div class="contributors-line">
+<div markdown="0">
 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+
 
 
 <a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
+	</div>
 
 </div>
 
 
-<div class="footnote" style="bottom: 5.5em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: Apr 16, 2021</div>
+<!-- modified date -->
+<div class="footnote" style="bottom: 8em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: </div>
 
-<div class="footnote" style="bottom: 4em;"><a href="/training-material/videos/watch.html?v=/transcriptomics/tutorials/mirna-target-finder/slides"><i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> View video slides for this lecture</a></div>
 
-<div class="footnote" style="bottom: 2.5em;"><i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a></div>
-<div class="footnote" style="bottom: 1em;"><strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes</div>
+<!-- other slide formats (video and plain-text) -->
+<div class="footnote" style="bottom: 6em;">
+
+  <i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> <a href="/training-material/videos/watch.html?v=/transcriptomics/tutorials/mirna-target-finder/slides">Video slides</a> |
+
+
+  <i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a>
+</div>
+
+
+<!-- usage tips -->
+<div class="footnote" style="bottom: 2em;">
+    <strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes
+    | <i class="fa fa-arrows" aria-hidden="true"></i><span class="visually-hidden">arrow-keys</span> Use arrow keys to move between slides
+
+</div>
 
 ???
 Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
@@ -365,7 +432,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: plant response to stress
 
-![plant response to stress](../../images/plant_stress_response.png)
+![plant response to stress](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_stress_response.png)
 
 ???
 - As sessile organisms, the survival of plants under adverse environmental conditions depends, to a large extent, on their ability to perceive stress stimuli and respond appropriately to counteract the potentially damaging effects.
@@ -376,7 +443,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: role of brassinosteroids
 
-![role of brassinosteroids](../../images/role_of_brassinosteroids.png)
+![role of brassinosteroids](/training-material/topics/transcriptomics/images/transcriptomics_images/brassinosteroids.png)
 
 ???
 - Brassinosteroids are a group of plant steroid hormones essential for plant growth and development, as well as for controlling abiotic and biotic stress.
@@ -388,7 +455,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Introduction: plant microRNAs
 
-![plant microRNAs](../../images/plant_mirna_synthesis_simple.png)
+![plant microRNAs](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_mirna_synthesis_simple.png)
 
 ???
 - miRNAs, mainly 20–22 nucleotide small RNAs, are characterized for regulating gene expression at the post-transcriptional level.
@@ -426,7 +493,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Experimental design
 
-![Experimental design](../../images/miRNA_pipeline.png)
+![Experimental design](/training-material/topics/transcriptomics/images/transcriptomics_images/miRNA_pipeline.png)
 
 ???
 - As shown here, we can divide the analysis into three stages. Differential expression analysis of miRNAs, differential expression analysis of mRNAs, and miRNA target identification.
@@ -442,7 +509,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ---
 
 ## Background on data
-![Background on data](../../images/plant_rnaseq_data.png)
+![Background on data](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_data.png)
 
 .footnote[[*E Oh, Elife, 2014*](https://www.ncbi.nlm.nih.gov/pubmed/24867218) and [*SY Park, Genes Genomics, 2020*](https://www.ncbi.nlm.nih.gov/pubmed/32648234)]
 
@@ -455,7 +522,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 ---
 
 ## Tools used in the analysis
-![Tools used in the analysis](../../images/plant_rnaseq_tools.png)
+![Tools used in the analysis](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_tools.png)
 
 ???
 - Now we will look at the tools that are used in the tutorial.
@@ -473,7 +540,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ## Background on tools
 
-![Tools used in the analysis](../../images/plant_rnaseq_tools.png)
+![Tools used in the analysis](/training-material/topics/transcriptomics/images/transcriptomics_images/plant_rnaseq_tools.png)
 
 - In mRNA-Seq data analysis:
     - No adapter clipping!
@@ -490,7 +557,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### Salmon overview
 
-![Salmon overview](../../images/salmon_steps.jpg)
+![Salmon overview](/training-material/topics/transcriptomics/images/transcriptomics_images/salmon_steps.jpg)
 
 .footnote[[*Patro, Nat Methods, 2017*](https://www.ncbi.nlm.nih.gov/pubmed/28263959)]
 
@@ -506,7 +573,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ### Salmon quasi-mapping
 
-![Salmon quasi-mapping](../../images/salmon_quasialignment.png)
+![Salmon quasi-mapping](../../images/transcriptomics_images/salmon_quasialignment.png)
 
 .footnote[[*Srivastava, Bioinformatics, 2016*](https://www.ncbi.nlm.nih.gov/pubmed/27307617)]
 
@@ -591,21 +658,29 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
+<div markdown="0">
 
-<div class="contributors-line">
-
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+
 
 
 <a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
 
 
+
+	</div>
+
 </div>
 
 
+<div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
 
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
+
+</div>
 
 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 This material is licensed under the Creative Commons Attribution 4.0 International License</a>.

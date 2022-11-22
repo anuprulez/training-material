@@ -17,6 +17,14 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/hall-of-fame/blankclemens/" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="GTN Contributor: Clemens Blank" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:00 +0000" />
 
         
         
@@ -24,9 +32,11 @@
         
         
         <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: GTN Contributor: Clemens Blank" />
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -131,6 +141,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -173,7 +184,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/hall-of-fame/blankclemens/" title="Version 2019-02-07">2019-02-07</a>
@@ -207,6 +217,31 @@
 
         <div class="container main-content" role="main">
         
+
+<script type="application/ld+json">
+	
+	{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+    "@type": "Person"
+  },
+  "url": "https://training.galaxyproject.org/training-material/hall-of-fame/blankclemens/",
+  "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/blankclemens/",
+  "name": "Clemens Blank",
+  "image": "https://avatars.githubusercontent.com/blankclemens",
+  "description": "A contributor to the GTN project.",
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "email": "galaxytrainingnetwork@gmail.com",
+      "name": "Galaxy Training Network",
+      "url": "https://galaxyproject.org/teach/gtn/"
+    }
+  ]
+}
+</script>
 
 <style type="text/css" media="all">
 .card-title {
@@ -253,7 +288,13 @@
 				
 
 				
-				<br/>
+
+				
+				<div class="contact-items">
+					<img src="/training-material/assets/images/elixir/elixir-de.svg" alt="elixir logo for Germany">
+				</div>
+				
+
 				<h4>Favourite Topics</h4>
 				<canvas id="myChart" height="300px"></canvas>
 				<h4>Favourite Formats</h4>
@@ -294,6 +335,11 @@
 						<a href="/training-material//topics/dev/tutorials/webhooks/tutorial.html">
 						Galaxy Webhooks
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 					<li>
@@ -306,6 +352,11 @@
 						<a href="/training-material//topics/transcriptomics/tutorials/ref-based/tutorial.html">
 						Reference-based RNA-Seq data analysis
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 					<li>
@@ -318,6 +369,11 @@
 						<a href="/training-material//topics/proteomics/tutorials/metaproteomics/tutorial.html">
 						Metaproteomics tutorial
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 					<li>
@@ -330,6 +386,11 @@
 						<a href="/training-material//topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html">
 						From peaks to genes
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 					<li>
@@ -342,6 +403,11 @@
 						<a href="/training-material//topics/introduction/tutorials/galaxy-intro-101/tutorial.html">
 						Galaxy 101
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 				</ul>
@@ -361,15 +427,24 @@
 						<a href="/training-material//topics/dev/tutorials/webhooks/slides.html">
 						Galaxy Webhooks
 						</a>
+						
+						
+	
+
+
 					</li>
 				
 				</ul>
 				
 
 				
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 
-				<script type="text/javascript">
+<script type="text/javascript">
+const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+if(isReduced){
+    Chart.defaults.global.animation.duration = 0;
+}
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var ctx2 = document.getElementById('slidesVsTutorials').getContext('2d');
@@ -505,46 +580,47 @@ var chart2 = new Chart(ctx2, {
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
         <p>
-The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-</p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/68f00ee516f2ca82b6b6bfbcb9764c38928b20de">68f00ee516f2ca82b6b6bfbcb9764c38928b20de</a></p>
+        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
+        </p>
+
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/aafa18eae63372b4cdab8e74eea30b0a558109fb">aafa18eae63372b4cdab8e74eea30b0a558109fb</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

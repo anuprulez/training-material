@@ -12,6 +12,17 @@
   "key_points": [
     "A new topic can be easily added for new tutorials"
   ],
+  "contributions": {
+    "authorship": [
+      "bebatut"
+    ],
+    "editing": [
+      "hexylena"
+    ]
+  },
+  "url": "/topics/contributing/tutorials/create-new-topic/tutorial.html",
+  "topic_name": "contributing",
+  "tutorial_name": "create-new-topic",
   "contributors": [
     {
       "name": "Bérénice Batut",
@@ -21,33 +32,20 @@
       "gitter": "bebatut",
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json"
+    },
+    {
+      "name": "Helena Rasche",
+      "email": "helena.rasche@gmail.com",
+      "orcid": "0000-0001-9760-8992",
+      "maintainer_contact": "gitter",
+      "gitter": "hexylena",
+      "joined": "2017-09",
+      "elixir_node": "nl",
+      "id": "hexylena",
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
     }
-  ],
-  "last_modified_at": "2020-01-24T10:47:00+00:00",
-  "url": "/topics/contributing/tutorials/create-new-topic/tutorial.html",
-  "topic_name": "contributing",
-  "tutorial_name": "create-new-topic",
-  "hands_on": true,
-  "slides": false,
-  "tools": [
-
-  ],
-  "tours": false,
-  "video": false,
-  "translations": {
-    "tutorial": [
-
-    ],
-    "slides": [
-
-    ],
-    "video": false
-  },
-  "type": "tutorial",
-  "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//contributing/tutorials/create-new-topic/tutorial.json"
-  }
+  ]
 }
