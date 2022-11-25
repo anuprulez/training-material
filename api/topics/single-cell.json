@@ -1657,7 +1657,7 @@
       "slides": true,
       "workflows": [
         {
-          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
+          "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
           "tests": false
         },
         {
@@ -1665,7 +1665,7 @@
           "tests": false
         },
         {
-          "workflow": "Galaxy-Workflow-AnnData_object_to_Monocle_input_files.ga",
+          "workflow": "Galaxy-Workflow-Monocle3_workflow.ga",
           "tests": false
         }
       ],
