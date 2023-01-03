@@ -769,6 +769,14 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/hrhotz.json"
   },
   {
+    "name": "Graeme Tyson",
+    "email": "grt67@open.ac.uk",
+    "orcid": "0000-0002-1748-2806",
+    "joined": "2022-09",
+    "id": "hrukkudyr",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/hrukkudyr.json"
+  },
+  {
     "name": "Hui Tang",
     "orcid": "0000-0002-8745-3859",
     "joined": "2021-01",
@@ -967,6 +975,7 @@
   {
     "name": "James Taylor",
     "joined": "2018-06",
+    "in_memoriam": "<a href=\"https://galaxyproject.org/jxtx/\">James Taylor, a leader of the Galaxy Project, and one of its original members, passed away on April 2, 2020.</a>\n\nHis impacts on the Galaxy community, have been incredible, and his loss is keenly felt.",
     "id": "jxtx",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/jxtx.json"
   },
@@ -1140,6 +1149,8 @@
   },
   {
     "name": "Marisa Loach",
+    "orcid": "0000-0001-6979-6930",
+    "twitter": "Marisa_Loach",
     "email": "marisa.loach@open.ac.uk",
     "joined": "2022-10",
     "id": "MarisaJL",
@@ -1497,6 +1508,7 @@
   {
     "name": "Polina Polunina",
     "gitter": "PlushZ",
+    "orcid": "0000-0002-0507-4602",
     "joined": "2022-03",
     "id": "plushz",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/plushz.json"
@@ -1693,6 +1705,7 @@
     "joined": "2017-09",
     "elixir_node": "au",
     "orcid": "0000-0002-6100-4385",
+    "in_memoriam": "<a href=\"https://www.biocommons.org.au/news/simon-gladman\">Simon Gladman, system administrator of UseGalaxy.org.au, passed away on November 26, 2022</a>\n\n<a href=\"https://galaxyproject.org/news/2022-11-28-simon-gladman/\">He was a fantastic teacher, tutorial author, system administrator, and warm and welcoming friend.</a> He contributed heavily to the Galaxy Training Network and especially the Galaxy Administration community over the years, we will miss him dearly. The GTN and GAT would not be what they are today, without him.\n\n“Have I told you about my watch?”",
     "id": "slugger70",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
   },

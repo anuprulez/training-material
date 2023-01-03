@@ -855,6 +855,7 @@
     {
       "layout": "tutorial_hands_on",
       "title": "IGV Introduction",
+      "enable": false,
       "zenodo_link": "",
       "questions": null,
       "objectives": null,
@@ -904,6 +905,9 @@
         "video": false
       },
       "type": "tutorial",
+      "tags": [
+        "work-in-progress"
+      ],
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/igv-introduction/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics//introduction/tutorials/igv-introduction/tutorial.json"
@@ -965,6 +969,7 @@
         "cat1",
         "gene2exon1",
         "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0",
+        "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/0.0.1",
         "toolshed.g2.bx.psu.edu/repos/devteam/intersect/gops_intersect_1/1.0.0",
         "ucsc_table_direct1"
       ],
