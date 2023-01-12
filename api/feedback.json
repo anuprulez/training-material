@@ -22482,5 +22482,16 @@
     "topic": "Variant Analysis",
     "month": "2023-01",
     "date": "2023-01-11"
+  },
+  {
+    "": "2891",
+    "note": "3",
+    "pro": null,
+    "con": "Not enough information",
+    "anonymous": null,
+    "tutorial": "Deep Learning (Part 1) - Feedforward neural networks (FNN)",
+    "topic": "Statistics and machine learning",
+    "month": "2023-01",
+    "date": "2023-01-11"
   }
 ]
