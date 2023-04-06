@@ -234,19 +234,7 @@
           "tests": false
         },
         {
-          "workflow": "workflow4_mock_otu_clustering.ga",
-          "tests": false
-        },
-        {
-          "workflow": "workflow7_beta_diversity.ga",
-          "tests": false
-        },
-        {
-          "workflow": "workflow3_classification.ga",
-          "tests": false
-        },
-        {
-          "workflow": "workflow2_data_cleaning.ga",
+          "workflow": "workflow6_alpha_diversity.ga",
           "tests": false
         },
         {
@@ -254,7 +242,19 @@
           "tests": false
         },
         {
-          "workflow": "workflow6_alpha_diversity.ga",
+          "workflow": "workflow2_data_cleaning.ga",
+          "tests": false
+        },
+        {
+          "workflow": "workflow4_mock_otu_clustering.ga",
+          "tests": false
+        },
+        {
+          "workflow": "workflow3_classification.ga",
+          "tests": false
+        },
+        {
+          "workflow": "workflow7_beta_diversity.ga",
           "tests": false
         }
       ],
@@ -1094,11 +1094,11 @@
       "slides": false,
       "workflows": [
         {
-          "workflow": "workflow2_community_profile.ga",
+          "workflow": "workflow3_functional_information.ga",
           "tests": false
         },
         {
-          "workflow": "workflow3_functional_information.ga",
+          "workflow": "workflow2_community_profile.ga",
           "tests": false
         },
         {
