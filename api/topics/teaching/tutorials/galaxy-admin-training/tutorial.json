@@ -1,7 +1,9 @@
 {
   "layout": "tutorial_hands_on",
   "redirect_from": [
-    "/topics/instructors/tutorials/galaxy-admin-training/tutorial"
+    "/topics/instructors/tutorials/galaxy-admin-training/tutorial",
+    "/short/teaching/galaxy-admin-training",
+    "/short/T00278"
   ],
   "title": "Galaxy Admin Training",
   "subtopic": "prepare",
@@ -33,17 +35,51 @@
   "contributors": [
     {
       "name": "Helena Rasche",
-      "email": "helena.rasche@gmail.com",
+      "email": "hexylena@galaxians.org",
       "orcid": "0000-0001-9760-8992",
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
     }
   ],
   "url": "/topics/teaching/tutorials/galaxy-admin-training/tutorial.html",
   "topic_name": "teaching",
-  "tutorial_name": "galaxy-admin-training"
+  "tutorial_name": "galaxy-admin-training",
+  "dir": "topics/teaching/tutorials/galaxy-admin-training",
+  "id": "teaching/galaxy-admin-training",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": false,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
 }

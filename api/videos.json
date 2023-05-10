@@ -9,6 +9,8 @@
                        
                        
                                
+                       
+                               
 			{
 				"id": "introduction/tutorials/galaxy-intro-short/slides",
 				"topic": "Introduction to Galaxy Analyses",
@@ -38,16 +40,14 @@
                                
                        
                                
-                       
-                               
-                       
-                               
 			{
 				"id": "introduction/tutorials/options-for-using-galaxy/slides",
 				"topic": "Introduction to Galaxy Analyses",
 				"title": "Options for using Galaxy"
 			},
 								
+                               
+                       
                                
                        
                                
@@ -69,85 +69,12 @@
                                
                        
                                
-                       
-                               
 			{
-				"id": "admin/tutorials/connect-to-compute-cluster/slides",
+				"id": "admin/tutorials/backup-cleanup/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Connecting Galaxy to a compute cluster"
+				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
 			},
 								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/systemd-supervisor/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Controlling Galaxy with systemd or Supervisor"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/data-library/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Data Libraries"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/database/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galactic Database"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible-galaxy/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Installation with Ansible"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/interactive-tools/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Interactive Tools"
-			},
-								
-                               
-                       
                                
                        
                                
@@ -162,35 +89,14 @@
                                
                        
                                
-			{
-				"id": "admin/tutorials/monitoring/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Monitoring with Telegraf and Grafana"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
 			{
-				"id": "admin/tutorials/production/slides",
+				"id": "admin/tutorials/data-library/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Gearing towards production"
+				"title": "Data Libraries"
 			},
 								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -209,16 +115,74 @@
                                
                        
                                
+                       
+                               
 			{
-				"id": "admin/tutorials/maintenance/slides",
+				"id": "admin/tutorials/monitoring/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Server Maintenance and Backups"
+				"title": "Galaxy Monitoring with Telegraf and Grafana"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/database/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galactic Database"
 			},
 								
                                
                        
                                
                        
+                               
+			{
+				"id": "admin/tutorials/interactive-tools/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Interactive Tools"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/ansible-galaxy/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Installation with Ansible"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/connect-to-compute-cluster/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Connecting Galaxy to a compute cluster"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/production/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Gearing towards production"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/systemd-supervisor/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Controlling Galaxy with systemd or Supervisor"
+			},
+								
                                
                        
                                
@@ -229,13 +193,71 @@
 			{
 				"id": "admin/tutorials/users-groups-quotas/slides",
 				"topic": "Galaxy Server administration",
-				"title": "User, Role, Group and Quota managment"
+				"title": "User, Role, Group, Quota, and Authentication managment"
 			},
 								
                                
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+			{
+				"id": "ai4life/tutorials/example-slides/slides",
+				"topic": "Image analysis using Deep Learning",
+				"title": "Example Slide Deck"
+			},
+								
+                               
+                       
                
 					
                        
@@ -271,6 +293,13 @@
                        
                                
                        
+                               
+                       
+               
+					
+                       
+                       
+                       
                
 					
                        
@@ -280,6 +309,8 @@
 					
                        
                        
+                       
+                               
                        
                                
 			{
@@ -291,14 +322,10 @@
                                
                        
                                
-                       
-                               
-                       
-                               
 			{
-				"id": "climate/tutorials/introduction/slides",
+				"id": "climate/tutorials/pangeo-notebook/slides",
 				"topic": "Climate",
-				"title": "Introduction to climate data"
+				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
 			},
 								
                                
@@ -314,34 +341,15 @@
                        
                                
 			{
-				"id": "climate/tutorials/pangeo-notebook/slides",
+				"id": "climate/tutorials/introduction/slides",
 				"topic": "Climate",
-				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
+				"title": "Introduction to climate data"
 			},
 								
                                
                        
                                
                        
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                
@@ -360,6 +368,15 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
                        
                                
                        
@@ -394,6 +411,18 @@
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
                
 					
                        
@@ -403,62 +432,6 @@
 					
                        
                        
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -486,6 +459,77 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
                        
                                
                        
@@ -519,16 +563,6 @@
                                
                        
                                
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
 			{
 				"id": "dev/tutorials/tool-generators/slides",
 				"topic": "Development in Galaxy",
@@ -539,23 +573,6 @@
                        
                                
                        
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -574,6 +591,51 @@
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
 			{
@@ -590,16 +652,6 @@
                        
                                
                        
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                
 					
                        
@@ -667,6 +719,46 @@
 					
                        
                        
+                       
+                               
+			{
+				"id": "genome-annotation/tutorials/annotation-with-prokka/slides",
+				"topic": "Genome Annotation",
+				"title": "Genome annotation with Prokka"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "genome-annotation/tutorials/apollo/slides",
+				"topic": "Genome Annotation",
+				"title": "Refining Genome Annotations with Apollo (prokaryotes)"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -679,50 +771,12 @@
 								
                                
                        
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "genome-annotation/tutorials/annotation-with-prokka/slides",
-				"topic": "Genome Annotation",
-				"title": "Genome annotation with Prokka"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "genome-annotation/tutorials/apollo/slides",
-				"topic": "Genome Annotation",
-				"title": "Refining Genome Annotations with Apollo (prokaryotes)"
-			},
-								
-                               
-                       
                
 					
                        
                        
+                       
+                               
                        
                                
                        
@@ -746,6 +800,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        
@@ -786,10 +842,54 @@
                        
                                
                        
+                               
+                       
+                               
+                       
                
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -812,46 +912,6 @@
                        
                                
                        
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                
 					
                        
@@ -904,6 +964,19 @@
 					
                        
                        
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
 			{
@@ -918,10 +991,6 @@
 				"title": "An introduction to scRNA-seq data analysis"
 			},
 								
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -961,59 +1030,6 @@
                        
                                
                        
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-               
-					
-                       
-                       
-                       
-               
-					
-                       
-                       
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                
@@ -1030,6 +1046,51 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+               
+					
+                       
+                       
                        
                                
                        
@@ -1056,46 +1117,20 @@
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
                
 					
                        
                        
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -1108,6 +1143,42 @@
 				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
 			},
 								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
                                
                        
                

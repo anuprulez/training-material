@@ -4,7 +4,9 @@
   "subtopic": "end-to-end",
   "priority": 2,
   "redirect_from": [
-    "/topics/transcriptomics/tutorials/scrna-raceid/tutorial"
+    "/topics/transcriptomics/tutorials/scrna-raceid/tutorial",
+    "/short/single-cell/scrna-raceid",
+    "/short/T00253"
   ],
   "zenodo_link": "https://zenodo.org/record/1511582",
   "tags": [
@@ -57,18 +59,75 @@
       "joined": "2018-11",
       "elixir_node": "de",
       "id": "mtekman",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/mtekman.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/mtekman.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mtekman/"
     },
     {
       "name": "Alex Ostrovsky",
       "email": "a.ostrovsky@mac.com",
+      "orcid": "0000-0002-7901-7109",
       "joined": "2019-06",
       "id": "astrovsky01",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json"
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/astrovsky01/"
     }
   ],
   "gitter": "Galaxy-Training-Network/galaxy-single-cell",
   "url": "/topics/single-cell/tutorials/scrna-raceid/tutorial.html",
   "topic_name": "single-cell",
-  "tutorial_name": "scrna-raceid"
+  "tutorial_name": "scrna-raceid",
+  "dir": "topics/single-cell/tutorials/scrna-raceid",
+  "id": "single-cell/scrna-raceid",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": false,
+  "workflows": [
+    {
+      "workflow": "main_workflow.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-raceid/workflows/main_workflow.ga",
+      "path": "topics/single-cell/tutorials/scrna-raceid/workflows/main_workflow.ga",
+      "wfid": "single-cell-scrna-raceid",
+      "wfname": "main_workflow",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-raceid/versions/main_workflow",
+      "license": null,
+      "creators": [
+
+      ]
+    }
+  ],
+  "tools": [
+    "raceid_clustering",
+    "raceid_filtnormconf",
+    "raceid_inspectclusters",
+    "raceid_inspecttrajectory",
+    "raceid_trajectory",
+    "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_head_tool/1.1.0",
+    "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sed_tool/1.1.1",
+    "toolshed.g2.bx.psu.edu/repos/iuc/datamash_ops/datamash_ops/1.1.0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/datamash_transpose/datamash_transpose/1.1.0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/raceid_clustering/raceid_clustering/0.2.3+galaxy0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/raceid_filtnormconf/raceid_filtnormconf/0.2.3+galaxy0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/raceid_inspectclusters/raceid_inspectclusters/0.2.3+galaxy0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/raceid_inspecttrajectory/raceid_inspecttrajectory/0.2.3+galaxy0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/raceid_trajectory/raceid_trajectory/0.2.3+galaxy0"
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
 }
