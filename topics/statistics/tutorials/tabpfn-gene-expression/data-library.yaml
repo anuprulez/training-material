@@ -1,0 +1,27 @@
+---
+destination:
+  type: library
+  name: GTN - Material
+  description: Galaxy Training Network Material
+  synopsis: Galaxy Training Network Material. See https://training.galaxyproject.org
+items:
+- name: Statistics and machine learning
+  description: Statistical analyses and machine learning using Galaxy tools
+  items:
+  - name: Cancer prediction from gene expression with TabPFN
+    items:
+    - name: GSE68086 input data
+      description: Tumor-educated platelet RNA-seq expression and sample metadata
+      items:
+      - url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68086/matrix/GSE68086_series_matrix.txt.gz
+        src: url
+        ext: txt
+        info: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68086
+      - url: https://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68086/suppl/GSE68086_TEP_data_matrix.txt.gz
+        src: url
+        ext: tabular
+        info: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68086
+      - url: https://raw.githubusercontent.com/galaxyproject/training-material/main/topics/statistics/tutorials/tabpfn-gene-expression/preprocess_expression_data.ipynb
+        src: url
+        ext: ipynb
+        info: Preprocessing notebook used by the accompanying Galaxy workflow
